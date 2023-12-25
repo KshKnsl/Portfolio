@@ -5,34 +5,45 @@
   <title>
     KK's Portfolio
   </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
-  <header>
-    <img src="Assets/Header.jpeg" height="250">
+  <!--Bootstrap Code-->
+  <header class="p-3 text-bg-dark">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+
+        </a>
+        <img id="ProfileImage" src="Assets/Profile.jpg" alt="Kush Kansal's Profile Photo">
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#About" class="nav-link px-2 text-secondary">About</a></li>
+          <li><a href="#Skills" class="nav-link px-2 text-white">Skills</a></li>
+          <li><a href="#Projects" class="nav-link px-2 text-white">Projects</a></li>
+          <li><a href="#Contact" class="nav-link px-2 text-white">Contact</a></li>
+        </ul>
+
+      </div>
+    </div>
   </header>
-  <h1>
-    Kush Kansal
-  </h1>
-  <img src="Assets/Profile.jpg" height="200" alt="Kush Kansal's Profile Photo">
-  <p>
+
+
+  <div id ="About" class="px-4 pt-5 my-5 text-center border-bottom">
+    <h1 class="display-4 fw-bold text-body-emphasis">Kush Kansal</h1>
+    <p id="Headline">
     Student @JIIT-27' | Java Programmer ♨️ | Open Source Contributor 💻 | 2⭐@LeetCode | Explorer🚀
   </p>
-    <h5>
-      Bulandshahr, Uttar Pradesh, India
-    </h5>
-    <hr/>
-
-    <h2>
-      <b>
-        About
-      </b>
-      <br />
-    </h2>
-    <p>
-      Hey, I am Kush Kansal, a CSE freshman @JIIT'27. Driven by a strong sense of curiosity, I am committed to addressing real-world challenges. Currently, I am dedicated to acquiring expertise in the MERN Stack, Java, Data Structures, and Cloud computing. My unwavering determination propels me towards achieving excellence, and I aspire to contribute significantly to society by enhancing people's lives.
-    </p>
-    <hr />
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">   Hey, I am Kush Kansal, a B.Tech CSE student. Driven by a strong sense of curiosity, I am committed to addressing real-world challenges. Currently, I am dedicated to acquiring expertise in the MERN Stack, Java, Data Structures, and Cloud computing. My unwavering determination propels me towards achieving excellence, and I aspire to contribute significantly to society by enhancing people's lives.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3"><a href="mailto:kushkansal0@gmail.com" target="_blank">Contact Me</a></button>
+      </div>
+    </div>
+  </div>
 
     <h2>
       <b>Experience</b><br />
@@ -48,7 +59,16 @@
   </ul>
   
   <hr />
-
+  <h2 id="Skills"><b>Skills</b></h2>
+  <div id="Buttons" class="d-flex gap-2 justify-content-center py-5">
+    <button class="btn btn-primary rounded-pill px-4" type="button">Java</button>
+    <button class="btn btn-primary rounded-pill px-4" type="button">DSA</button>
+    <button class="btn btn-primary rounded-pill px-4" type="button">HTML</button>
+    <button class="btn btn-primary rounded-pill px-4" type="button">CSS</button>
+    <button class="btn btn-primary rounded-pill px-4" type="button">BootStrap</button>
+    <button class="btn btn-primary rounded-pill px-4" type="button">JavaScript</button>
+    
+  </div>
   <h2>
     <b>Education</b><br />
   </h2>
@@ -56,28 +76,14 @@
     <h3>
       <b><li>Jaypee Institute of Information Technology</b><br /></h2></li>
       <p>Bachelor of Technology(B.Tech CSE)</p>
-      <h4>Skills</h4>
-      <ul>
-        <li>SQL</li>
-        <li>Cloud Computing</li>
-        <li>C Programming language</li>
-        <li>DSA</li>
-      </ul>
     <br />
   
     <h3><b><li>S.T. Joseph Sr. Sec. School</b><br /></h3></li>
       <p>10+2 with PCM(with Computer)-->ISC 12 and ICSE 10</p>
-      <h4>Skills</h4>
-      <ul>
-        <li>JAVA</li>
-        <li>DSA</li>
-        <li>Git & Github</li>
-        <li>File Handling</li>
-      </ul>
   </ol>
   <hr />
 
-  <h2>
+  <h2 id="Projects">
     <b>Projects</b><br />
   </h2>
   
@@ -96,22 +102,30 @@
   </ol>
   
   <hr />
-  
-  <h3>
-    Contact Me:
-  </h3>
-  <p>Tel: +91 8273790830 </p>
-  <p>Email: kushkansal0@gmail.com</p>
-  <p>Address:</p>
-  <p>
-    Jaypee Institute of Information Technology,<br />
-    Sector-62,<br />
-    Noida, U.P.<br />
-    INDIA<br/>
-  </p>
-  
-  <footer>  
+  <div id="Contact">
+    <div id="INFO">
+      <h3>
+        Contact Me:
+      </h3>
+      <p>Tel: +91 8273790830 </p>
+      <p>Email: kushkansal0@gmail.com</p>
+      <p>Address:</p>
+      <p>
+        Jaypee Institute of Information Technology,<br />
+        Sector-62,<br />
+        Noida, U.P.<br />
+        INDIA<br/>
+      </p>
+    </div>
+    <div id="INFO2">
+        <h3>
+          Connect with Me:
+        </h3>
+    </div>
+  </div>
+  <div id"fot">
+  <p id="Fotter">  
     © Kush Knsl. All rights reserved.
-  </footer>
+  </p></div>
 </body>
 </html>

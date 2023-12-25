@@ -1,0 +1,62 @@
+#ProfileImage
+{
+    height: 50px;
+    border-radius: 25px;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-bottom: 0;
+    
+    box-shadow: 0 0 10px 5px rgba(255,215,0, 0.7);
+    border: solid;
+    border-width: 2px;
+    border-color: gold;
+}
+#Contact
+{
+    background-color: #353535;
+    box-shadow: 0 0 10px 5px black;
+    display: flex;
+}
+#INFO
+{
+    margin: 0% 5%;
+    padding: 5%;
+    color: white;   
+    font-weight: 500;
+}
+#INFO2
+{
+    margin: 0% 5%;
+    padding: 5%;
+    color: white;   
+    font-weight: 500;
+}
+#Fotter
+{
+    background-color: #353535;
+    color: whitesmoke;
+    text-align: center;
+}
+#Skills
+{
+    text-align: center;
+}   
+#Buttons
+{
+    padding: 2%!important;
+    box-shadow: 0 0 20px 10px rgba(255,215,0, .5);
+    border-style: dotted;
+    border-color: gold;
+}
+.btn
+{
+    color:white;
+    background-color: #03C988;
+    box-shadow: 0 0 10px 5px rgb(28, 130, 173,0.7);
+    font-size: 1.5rem;
+    margin: 5px;
+}
+a{
+    color:white;
+    text-decoration: none;
+}
