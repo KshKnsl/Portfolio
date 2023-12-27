@@ -1,7 +1,8 @@
 html
 {
-    background-color: whitesmoke;
-}#ProfileImage
+    background-color: whitesmoke;   
+}
+#ProfileImage
 {
     height: 50px;
     border-radius: 25px;
@@ -14,8 +15,45 @@ html
     border-width: 2px;
     border-color: gold;
 }
+#About
+{
+    background-image: url("https://img.freepik.com/premium-vector/white-background-with-zigzag-line-pattern-design-texture_541806-59.jpg");
+    background-size: cover;
+}
+
+.outerBox
+{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    background-color: #fff;
+    color: #444;
+}
+.col
+{
+    background-color: #12154C;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 150%;
+    margin: 5px;
+    text-align: center;
+}
+#Projects
+{
+    text-align: center;
+}
+.a
+{   
+    grid: 1 ;
+}
+.b
+{  
+    grid: 2;
+}
 #Contact
 {
+    clear: both;
     background-color: #353535;
     box-shadow: 0 0 10px 5px black;
     display: flex;
@@ -23,20 +61,20 @@ html
 #INFO
 {
     margin: 0% 5%;
-    padding: 5%;
+    padding: 2%;
     color: white;   
     font-weight: 500;
 }
 #INFO2
 {
     margin: 0% 5%;
-    padding: 5%;
+    padding: 2%;
     color: white;   
     font-weight: 500;
 }
 #Fotter
 {
-    background-color: orange;
+    background-color: #FF7704;
     color: whitesmoke;
     text-align: center;
 }
@@ -47,14 +85,16 @@ html
 #Buttons
 {
     padding: 2%!important;
-    box-shadow: 0 0 20px 10px rgba(255,215,0, .5);
+    box-shadow: 0 0 20px 10px rgba(255,119,4, .5);
     border-style: dotted;
-    border-color: gold;
+    border-color: #FF7704;
+    flex-wrap: wrap;
 }
 .btn
 {
+
     color:white;
-    background-color: #03C988;
+    background-color: #1887C7;
     box-shadow: 0 0 10px 5px rgb(28, 130, 173,0.7);
     font-size: 1.5rem;
     margin: 5px;
