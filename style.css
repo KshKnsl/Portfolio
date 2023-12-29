@@ -1,7 +1,3 @@
-html
-{
-    background-color: whitesmoke;   
-}
 #ProfileImage
 {
     height: 50px;
@@ -14,19 +10,23 @@ html
     border: solid;
     border-width: 2px;
     border-color: gold;
+    cursor: none;
 }
 #About
 {
-    background-image: url("https://img.freepik.com/premium-vector/white-background-with-zigzag-line-pattern-design-texture_541806-59.jpg");
-    background-size: cover;
+    margin-top: 0%!important;
+    margin-bottom: 2%!important;
+    z-index: 3;
 }
 .name
 {
+    color: #010013;
     font-size: 8rem ;
     font-family: Handlee;
 }
 #Headline
 {
+    color: #010013;
     font-size: 28px;
     font-weight: 100;
 }
@@ -35,13 +35,69 @@ html
     font-size: 20px;
     font-weight: 400;
 }
+.EducationArea
+{
+    color: #010013;
+    padding: 5% 5%;
+    margin: 5% 5%;
+    display: grid;
+    width: 90%;
+    height:75%;
+    grid-template-rows: auto 1fr 1fr;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(130,130,130,0.5);
+    border-radius: 20px;
+}
+.EducationArea:hover
+{
+    box-shadow:0 1px 40px rgba(0, 0, 0, 0.3);
+    transform: scale(0.9,0.9);    
+}
+#JIIT
+{
+    grid: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#STJOSEPH
+{
+    grid-row: 3;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.subtitle
+{
+    color: rgb(130,130,130);
+}
+.logoedu
+{
+    width: 15vh;
+    margin: 5px;
+    padding: 5px;;
+}
+#EducationTitle
+{
+    grid: 1;
+    text-align: center;
+    color: #010013;
+    font-size: 3rem;
+}
+
 .outerBox
 {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr;
-    background-color: #fff;
     color: #444;
+    padding: 1%;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .col
 {
@@ -53,17 +109,37 @@ html
     margin: 5px;
     text-align: center;
 }
+.card {
+    font-size: 1.5rem;
+    font-stretch: semi-expanded;
+}
+.projarea
+{
+    background-color:rgb(231,231,231);
+}
 #Projects
 {
+    padding-top: 50px;
     text-align: center;
+    color: #010013;
+    font-size: 3rem;
 }
-.a
+.ProjectIMG
+{
+    width: 75%;
+    border-radius: 5px;
+}
+.card1
 {   
     grid: 1 ;
 }
-.b
+.card2
 {  
     grid: 2;
+}
+.card:hover
+{
+    transform: rotate3d(1, 2, 3, 3deg);
 }
 #Contact
 {
@@ -95,7 +171,10 @@ html
 }
 #Skills
 {
+    color: #010013;
     text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
 }   
 #Buttons
 {
@@ -155,6 +234,7 @@ li{
     justify-content: center;
     justify-items: center;
     align-items: center;
+    z-index: 1;
 }
 .mailfixed:hover
 {
