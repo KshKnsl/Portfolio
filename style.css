@@ -8,8 +8,7 @@ html
     border-radius: 25px;
     margin-right: 1%;
     margin-left: 1%;
-    margin-bottom: 0;
-    position: ;
+    margin-bottom: 0%;
     
     box-shadow: 0 0 10px 5px rgba(255,215,0, 0.7);
     border: solid;
@@ -21,7 +20,21 @@ html
     background-image: url("https://img.freepik.com/premium-vector/white-background-with-zigzag-line-pattern-design-texture_541806-59.jpg");
     background-size: cover;
 }
-
+.name
+{
+    font-size: 8rem ;
+    font-family: Handlee;
+}
+#Headline
+{
+    font-size: 28px;
+    font-weight: 100;
+}
+.myinfo
+{
+    font-size: 20px;
+    font-weight: 400;
+}
 .outerBox
 {
     display: grid;
@@ -58,6 +71,7 @@ html
     background-color: #353535;
     box-shadow: 0 0 10px 5px black;
     display: flex;
+    justify-content: space-evenly;
 }
 #INFO
 {
@@ -111,4 +125,40 @@ a{
 }
 li{
     list-style-type: none;
+}
+#Plane{
+    width: 50px;
+    padding: 5px;
+}
+#mailing-text
+{
+    color: white;
+    font-size: 23px;
+    margin: 0px 5px;
+    font-weight: 900;
+}
+.mailfixed
+{
+    position: fixed;
+    right:20px;
+    bottom: 5%;
+    padding: 5px;
+    margin: 6px;
+    background-color: #FF7704;
+    width: 175px;
+    border-radius: 50px;
+    border: #12154C;
+    border-width: 1px;
+    border-style: solid;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.mailfixed:hover
+{
+    cursor: pointer;
+    box-shadow: 0 0 10px 5px rgb(28, 130, 173,0.7);   
+    transform: scale(1.1,1.1);
 }
