@@ -18,11 +18,24 @@
     margin-bottom: 2%!important;
     z-index: 3;
 }
-.name
+.name 
 {
     color: #010013;
-    font-size: 8rem ;
+    font-size: 8rem;
     font-family: Handlee;
+    text-align: center;
+    background-color: white;
+    animation: zoomOut 1s;
+    text-shadow: 2px 2px 20px #010013;
+}
+
+@keyframes zoomOut {
+    from {
+        transform: scale(1000);
+    }
+    to {
+        transform: scale(1);
+    }
 }
 #Headline
 {
