@@ -15,26 +15,27 @@
   <link rel="stylesheet" href="style.css"/>
 </head>
 
+
+
 <body>
-  <!--Bootstrap Code-->
-  <header class="p-2 text-bg-dark">
-    <div class="container">
-      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <a href="/" class="d-flex align-items-center mb-4 mb-lg-2 text-white text-decoration-none">
+  <div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-3 border-bottom">
+      <img id="ProfileImage" src="Assets/Profile.jpg" alt="Kush Kansal's Profile Photo">
+      <a href="#About" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <span class="fs-2">
+          Portfolio.
+        </span>
+      </a>
 
-        </a>
-        <img id="ProfileImage" src="Assets/Profile.jpg" alt="Kush Kansal's Profile Photo">
+      <ul class="nav col-12 col-lg-auto me-lg-auto justify-content-center">
+        <li><a href="#About" class="nav-link px-2 text-decoration-none">About</a></li>
+        <li><a href="#Skills" class="nav-link px-2 text-blue">Skills</a></li>
+        <li><a href="#Projects" class="nav-link px-2 text-blue">Projects</a></li>
+        <li><a href="#Contact" class="nav-link px-2 text-blue">Contact</a></li>
+      </ul>
+    </header>
+  </div>
 
-        <ul class="nav col-12 col-lg-auto me-lg-auto justify-content-center">
-          <li><a href="#About" class="nav-link px-2 text-decoration-none">About</a></li>
-          <li><a href="#Skills" class="nav-link px-2 text-white">Skills</a></li>
-          <li><a href="#Projects" class="nav-link px-2 text-white">Projects</a></li>
-          <li><a href="#Contact" class="nav-link px-2 text-white">Contact</a></li>
-        </ul>
-
-      </div>
-    </div>
-  </header>
 
   <div id ="About" class="px-4 pt-5 my-5 text-center border-bottom hero">
     <h1 class="display-1 fw-bold name">Kush Kansal</h1>
@@ -58,14 +59,19 @@
   </a>
     
   <h2 id="Skills"><b>Skills</b></h2>
+  <div id="Tech-Stacks">
+    <img src="Assets/TechStacks-logo/C_Logo.png">
+    <img src="Assets/TechStacks-logo/C++_Logo.png">
+    <img src="Assets/TechStacks-logo/Java-Logo.png">
+    <img src="Assets/TechStacks-logo/web front3.png">
+  </div>
   <div id="Buttons" class="d-sm-flex justify-content-center align-items-center">
-    <button class="btn btn-primary rounded-pill px-4 btn-lg" type="button">Java</button>
-    <button class="btn btn-primary rounded-pill px-4 btn-lg" type="button">DSA</button>
-    <button class="btn btn-primary rounded-pill px-4 btn-lg" type="button">HTML</button>
-    <button class="btn btn-primary rounded-pill px-4 btn-lg" type="button">CSS</button>
-    <button class="btn btn-primary rounded-pill px-4 btn-lg" type="button">BootStrap</button>
-    <button class="btn btn-primary rounded-pill px-4 btn-lg" type="button">JavaScript</button>
-    
+    <button class="btn" type="button">Java</button>
+    <button class="btn" type="button">HTML</button>
+    <button class="btn" type="button">DSA</button>
+    <button class="btn" type="button">CSS</button>
+    <button class="btn" type="button">BootStrap</button>
+    <button class="btn" type="button">JavaScript</button>
   </div>
 
   <div class="EducationArea">
