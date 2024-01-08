@@ -1,16 +1,20 @@
 #ProfileImage
 {
-    height: 50px;
-    border-radius: 25px;
-    margin-right: 1%;
+    height: 60px;
+    border-radius: 30px;
+    margin-right: 2%;
     margin-left: 1%;
     margin-bottom: 0%;
-    
-    box-shadow: 0 0 10px 5px rgba(255,215,0, 0.7);
+    box-shadow: 0 0 10px 10px rgba(255,215,0, 0.7);
     border: solid;
     border-width: 2px;
     border-color: gold;
     cursor: none;
+}
+.nav-link
+{
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 #About
 {
@@ -20,13 +24,16 @@
 }
 .name 
 {
-    color: #010013;
-    font-size: 8rem;
+    background-image: linear-gradient(to right, #18c7be95, #f69e0f,#ff6200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    font-size: 10rem;
     font-family: Handlee;
     text-align: center;
     background-color: white;
     animation: zoomOut 1s;
-    text-shadow: 2px 2px 20px #010013;
+    text-shadow: 0 0 100px cornflowerblue;
 }
 
 @keyframes zoomOut {
@@ -193,18 +200,38 @@
 {
     padding: 2%!important;
     box-shadow: 0 0 20px 10px rgba(255,119,4, .5);
-    border-style: dotted;
+    border-style: dashed;
     border-color: #FF7704;
     flex-wrap: wrap;
 }
+#Tech-Stacks
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+    margin: 50px;
+    flex-wrap: wrap;
+}
+#Tech-Stacks img
+{
+    height: 15vh;
+    min-height: 100px;
+}
 .btn
 {
-
     color:white;
-    background-color: #1887C7;
-    box-shadow: 0 0 10px 5px rgb(28, 130, 173,0.7);
+    background-color: rgb(55, 31, 134);
+    box-shadow: 0 0 10px 5px rgba(62, 25, 155, 0.7);
     font-size: 1.5rem;
-    margin: 5px;
+    margin: 20px 10px;
+    width: 200px;
+    border-radius: 50px;
+    align-content: center;
+    height: 80px;
+}
+.btn:hover{
+    transform: translateY(-10px);
 }
 a{
     color:white;
