@@ -38,7 +38,7 @@
 
 @keyframes zoomOut {
     from {
-        transform: scale(1000);
+        transform: scale(2000);
     }
     to {
         transform: scale(1);
