@@ -215,8 +215,9 @@
 }
 #Tech-Stacks img
 {
-    height: 15vh;
+    max-height: 150px;
     min-height: 100px;
+    height: 20vh;
 }
 .btn
 {
