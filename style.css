@@ -73,6 +73,8 @@
 {
     box-shadow:0 1px 40px rgba(0, 0, 0, 0.3);
     transform: scale(0.9,0.9);    
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 #JIIT
 {
@@ -159,7 +161,9 @@
 }
 .card:hover
 {
-    transform: rotate3d(1, 2, 3, 3deg);
+    transform: rotate3d(1, 2, 3, -5deg);
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
 }
 #Contact
 {
