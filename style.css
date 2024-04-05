@@ -2,7 +2,10 @@ html , body
 {
     width: 100%;
     height: 100%;
+    user-select: none;
     cursor: url('Assets/SVGs/CursorSvgs/Default.svg'), auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 button
 {
@@ -57,12 +60,12 @@ button
 #Headline
 {
     color: #010013;
-    font-size: 28px;
+    font-size: 2rem;
     font-weight: 100;
 }
 .myinfo
 {
-    font-size: 20px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
@@ -301,3 +304,36 @@ li{
     box-shadow: 0 0 10px 5px rgb(28, 130, 173,0.7);   
     transform: scale(1.1,1.1);
 }
+.ExtraCursor
+{
+    display: flex;
+    position: absolute;
+    height: 40px;
+    width: fit-content;
+    background-color: coral;
+    border: 5px;
+    border-radius: 20px;
+    z-index: 99999;
+    transition: transform 0s cubic-bezier(0.215, 0.610, 0.355, 1);
+    opacity: 0;
+    font-family: "Inter", sans-serif;
+    color: #fff;
+    padding: 5px 15px;
+    margin: 2px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+.hero
+{
+    width: 100vw;
+    overflow: hidden;
+}
+@media screen and (max-width: 770px) 
+{
+    .portlext 
+    {
+      display: none;
+    }
+}
+  
