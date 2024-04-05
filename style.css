@@ -1,3 +1,13 @@
+html , body
+{
+    width: 100%;
+    height: 100%;
+    cursor: url('Assets/SVGs/CursorSvgs/Default.svg'), auto;
+}
+button
+{
+    cursor: url('Assets/SVGs/CursorSvgs/Hand.svg'), auto !important;
+}
 #ProfileImage
 {
     height: 60px;
@@ -55,9 +65,9 @@
     font-size: 20px;
     font-weight: 400;
 }
+
 .EducationArea
 {
-    color: #010013;
     padding: 5% 5%;
     margin: 5% 5%;
     display: grid;
@@ -234,13 +244,16 @@
     border-radius: 50px;
     align-content: center;
     height: 80px;
+    transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); 
 }
-.btn:hover{
+.btn:hover
+{
     transform: translateY(-10px);
 }
 a{
     color:white;
     text-decoration: none;
+    cursor: url('Assets/SVGs/CursorSvgs/Hand.svg'), auto;
 }
 .Socials
 {
@@ -280,6 +293,7 @@ li{
     justify-items: center;
     align-items: center;
     z-index: 1;
+    transition: transform 0.3s cubic-bezier(0.23, 1, 0.320, 1); 
 }
 .mailfixed:hover
 {
