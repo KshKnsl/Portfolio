@@ -5,7 +5,7 @@ function cursorDesigning()
 
     area.addEventListener("mousemove", function(details) 
     {
-    cursor.style.opacity= 0.9;
+    cursor.style.opacity= 0.95;
     var rect = area.getBoundingClientRect(); // Get the dimensions and position of the area
     var offsetX = rect.top; // Calculate the distance between the top of the area and the document top
     var xpos = details.clientX; // Horizontal offset
@@ -34,5 +34,23 @@ function heroAreaDesigning()
         cursorBlock.style.backgroundColor= colorArr[random];
     });
 }
+function hideLoadingPage() 
+{
+    var i = 0;
+    var loadString = ["Compiling...", "Interpreting...", "Running...", "Completed..."];
+    var elementString = document.querySelector("#loading-items");
+    var intervalId = setInterval(() => {
+        elementString.innerHTML = loadString[i++];
+        console.log(i);
+        if (i === 4)
+            clearInterval(intervalId);
+    }, 100);
+    setTimeout(() => {
+        document.querySelector("#loading").style.display = "none";
+    }, 700);
+}
+
+
 cursorDesigning();
 heroAreaDesigning();
+hideLoadingPage();
