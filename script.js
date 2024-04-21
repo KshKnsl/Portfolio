@@ -25,7 +25,7 @@ function heroAreaDesigning()
     var area = document.querySelector("#About");
     setInterval(() => {
         var random = Math.floor(Math.random() * textArr.length) ;
-        cursorBlock.textContent= textArr[random];
+        cursorBlock.innerHTML= textArr[random];
         cursorBlock.style.backgroundColor= colorArr[random];
     }, 3000);
     area.addEventListener("click", ()=>{
@@ -46,10 +46,33 @@ function hideLoadingPage()
             clearInterval(intervalId);
     }, 100);
     setTimeout(() => {
+        console.log("Here");
         document.querySelector("#loading").style.display = "none";
     }, 700);
 }
 
+const paragraph = document.getElementById('text');
+
+// paragraph.innerHTML = paragraph.textContent.split(' ').map(word => `<span class="hover-word">${word} </span>`).join('');
+
+
+const images = document.querySelectorAll('.skillGallery img');
+const overlay = document.getElementById('overlayer');
+console.log(images);
+images.forEach(image => 
+{
+    image.addEventListener('mouseenter', () => {
+        console.log("here");
+        overlay.style.display = 'block'; // Display the overlay
+    });
+    
+    image.addEventListener('mouseleave', () => {
+        setTimeout(() => {
+            overlay.style.display = 'none';    
+        }, 50);
+        
+    });
+});
 
 cursorDesigning();
 heroAreaDesigning();
