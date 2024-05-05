@@ -10,6 +10,15 @@ html , body
     width: 100%;
     height: 100%;
 }
+.navbar
+{
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  margin: 8px;
+  padding: 10px 40px;
+  background-color: #fff;
+}
 button
 {
     cursor: url('Assets/SVGs/CursorSvgs/Hand.svg'), auto !important;
@@ -20,8 +29,8 @@ button
     border-radius: 30px;
     margin-right: 2%;
     margin-left: 1%;
-    margin-bottom: 0%;
-    box-shadow: 0 0 10px 10px rgba(255,215,0, 0.7);
+    margin-bottom: 8px;
+    box-shadow: 0 0 20px 10px rgba(255,215,0, 0.7);
     border: solid;
     border-width: 2px;
     border-color: gold;
@@ -79,6 +88,9 @@ button
     transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1.76);
     animation: load 0.3s;
   }
+  .fgkg a{
+    color: #fff;
+  }
   @keyframes load 
   {
     0%
@@ -101,12 +113,6 @@ button
         opacity: 0;
     }
   }
-
-.nav-link
-{
-    font-size: 1.5rem;
-    font-weight: 600;
-}
 #About
 {
     margin-top: 0%!important;
@@ -324,8 +330,8 @@ button
 {
     transform: translateY(-10px);
 }
-a{
-    color:white;
+a
+{
     text-decoration: none;
     cursor: url('Assets/SVGs/CursorSvgs/Hand.svg'), auto;
 }
@@ -400,14 +406,6 @@ li{
     width: 100vw;
     overflow: hidden;
 }
-@media screen and (max-width: 770px) 
-{
-    .portlext 
-    {
-      display: none;
-    }
-}
-
 .Skill-Section
 { 
     display: flex;
@@ -435,21 +433,29 @@ li{
         grid-column: 2 / span 2;
     }
 }
-@media screen and (max-width: 770px)
-{ 
-    .skillGallery
-    {
-        grid-template-columns: repeat(4,100px);
-        grid-template-rows: repeat(5,100px);
-        .special2
-        {
-            grid-column: 2 / span 2;
-        }
-        .special
-        {
-            grid-column: 1 / span 2;
-        }
-    }   
+@media screen and (max-width: 800px)
+{
+  .porttext 
+  {
+    display: none;
+  }
+  .navbar
+  {
+    flex-direction: column;
+  } 
+  .skillGallery
+  {
+      grid-template-columns: repeat(4,100px);
+      grid-template-rows: repeat(5,100px);
+      .special2
+      {
+          grid-column: 2 / span 2;
+      }
+      .special
+      {
+          grid-column: 1 / span 2;
+      }
+  }   
 }
 .skillGallery img
 {   
