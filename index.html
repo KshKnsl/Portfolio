@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <!--Open graph meta properties for web representation while sharing on social medias-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
   <meta property="og:title" content="Kush Kansal's Portfolio" />
   <meta property='og:image' content="Assets/Thumbnail.jpg" />
   <meta property='og:description' content='A portfolio Site' />
@@ -30,8 +31,6 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-
-
 <body>
   <div class="main">
   <div id="loading">
@@ -41,28 +40,23 @@
     </div>
     <div id="loading-items">Starting...</div>
   </div>
-  <div class="container">
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-3 border-bottom">
-      <img id="ProfileImage" src="Assets/Profile.jpg" alt="Kush Kansal's Profile Photo">
-      <a href="#About"
-        class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-        <span class="fs-2 portlext">
-          Portfolio.
-        </span>
-      </a>
 
-      <ul class="nav col-12 col-lg-auto me-lg-auto justify-content-center">
-        <li><a href="#About" class="nav-link px-2 text-decoration-none">About</a></li>
-        <li><a href="#Skills" class="nav-link px-2 text-blue">Skills</a></li>
-        <li><a href="#Projects" class="nav-link px-2 text-blue">Projects</a></li>
-        <li><a href="#Contact" class="nav-link px-2 text-blue">Contact</a></li>
-      </ul>
-    </header>
+  <div class="navbar">
+    <div class="profileArea" style="display: flex; align-items: center; justify-content: center;">
+      <div class="ProfileIMG">
+        <img id="ProfileImage" src="Assets/Profile.jpg" alt="Kush Kansal's Profile Photo">
+      </div>
+      <div class="Profiletxt porttext" style="font-size: 40px; margin-left: 16px;">Portfolio.</div>
+    </div>  
+    <div class="LinksArea" style="display: flex; font-size: 32px; font-weight: 500; color: #0D6EFD; gap: 24px; margin-right: 20px;">
+      <a href="#About">About</a>
+      <a href="#Skills">Skills</a>
+      <a href="#Projects">Projects</a>
+      <a href="#Contact">Contact</a>  
+    </div>
   </div>
-
-
+  <hr style="margin: 0px 20px;">
   <div id="About" class="px-4 pt-5 my-5 text-center border-bottom hero">
-    <div class="hero"></div>
     <div class="ExtraCursor">JAVA DEVELOPER ♨️ </div>
     <h1 class="display-1 fw-bold name">Kush Kansal</h1>
     <p id="Headline">
@@ -79,7 +73,7 @@
         society by enhancing people's lives.</p>
     </div>
     <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-      <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3"><a href="mailto:kushkansal0@gmail.com"
+      <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3 fgkg"><a href="mailto:kushkansal0@gmail.com"
           target="_blank">Contact Me</a></button>
     </div>
   </div>
@@ -155,6 +149,8 @@
     </div>
   </div>
   <div id="Contact">
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <div class="elfsight-app-d3c0a654-8d55-4388-ac94-8a1b0115b1cd" data-elfsight-app-lazy></div>
     <div id="INFO">
       <h3>
         Contact Me:
@@ -172,7 +168,7 @@
       <h3>
         Connect with Me:
       </h3>
-      <div class="Socials">
+      <div class="Socials fgkg">
         <ul>
           <li><img class="Socials" src="./Assets/SVGs/linkedin.svg" alt="LinkedIn logo">
             <a href="https://www.linkedin.com/in/kushkansal/" target="_blank">KushKansal</a>

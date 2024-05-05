@@ -46,7 +46,6 @@ function hideLoadingPage()
             clearInterval(intervalId);
     }, 100);
     setTimeout(() => {
-        console.log("Here");
         document.querySelector("#loading").style.display = "none";
     }, 700);
 }
@@ -58,7 +57,6 @@ const paragraph = document.getElementById('text');
 
 const images = document.querySelectorAll('.skillGallery img');
 const overlay = document.getElementById('overlayer');
-console.log(images);
 images.forEach(image => 
 {
     image.addEventListener('mouseenter', () => {
@@ -77,3 +75,13 @@ images.forEach(image =>
 cursorDesigning();
 heroAreaDesigning();
 hideLoadingPage();
+
+setTimeout(function() {
+    var allLinks = document.getElementsByTagName('a');
+    for (var i = 0; i < allLinks.length; i++) {
+        var href = allLinks[i].getAttribute('href');
+        if (href && href.startsWith('https://elfsight.com/visitor-counter-widget/?utm_source=websites&utm_medium=clients&utm_content=visitor-counter')) {
+            allLinks[i].style.display = 'none';
+        }
+    }
+}, 1500);
