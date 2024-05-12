@@ -76,12 +76,20 @@ cursorDesigning();
 heroAreaDesigning();
 hideLoadingPage();
 
-setTimeout(function() {
+var adInterval = setInterval(function() 
+{
     var allLinks = document.getElementsByTagName('a');
-    for (var i = 0; i < allLinks.length; i++) {
+    for (var i = 0; i < allLinks.length; i++) 
+        {
         var href = allLinks[i].getAttribute('href');
-        if (href && href.startsWith('https://elfsight.com/visitor-counter-widget/?utm_source=websites&utm_medium=clients&utm_content=visitor-counter')) {
+        if (href && href.startsWith('https://elfsight.com/visitor-counter-widget/?utm_source=websites&utm_medium=clients&utm_content=visitor-counter')) 
+        {
             allLinks[i].style.display = 'none';
         }
     }
-}, 1500);
+}, 100);
+
+// Clear the interval after 10 seconds
+setTimeout(function() {
+    clearInterval(adInterval);
+}, 10000); // 10 seconds in milliseconds
