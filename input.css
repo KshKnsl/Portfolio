@@ -7,7 +7,7 @@
   --text-color2: white;
 }
 body{   cursor: url('/CursorSvgs/Default.svg'), auto;  }
-a, .modeChanger, .scroll   {   cursor: url('/CursorSvgs/Hand.svg'), pointer;  }
+a, .modeChanger, .scroll, .btn   {   cursor: url('/CursorSvgs/Hand.svg'), pointer;  }
 *
 {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -81,10 +81,7 @@ img{ user-select: none;}
 .modeChanger{ transition: all 0.5s;}
 .modeChanger:hover { transform: scale(1.1);}
 @media (max-width: 768px) {
-.menu
-{
-    display: none;
-} 
+.menu{    display: none;} 
 }
 .name 
 {
@@ -411,4 +408,31 @@ img{ user-select: none;}
 .invertme
 {
   /* filter: invert(1); */
+}
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.9); /* Optional: To give a background when maximized */
+}
+.MenuLinks { position: relative;}
+  .MenuLinks::after {
+    content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: -4px;
+  left: 0;
+  background-color: aqua;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.MenuLinks:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }

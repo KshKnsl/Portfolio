@@ -646,6 +646,10 @@ video {
   display: grid;
 }
 
+.h-4 {
+  height: 1rem;
+}
+
 .h-\[30px\] {
   height: 30px;
 }
@@ -668,6 +672,10 @@ video {
 
 .min-h-screen {
   min-height: 100vh;
+}
+
+.w-4 {
+  width: 1rem;
 }
 
 .w-\[30px\] {
@@ -773,6 +781,26 @@ video {
   border-radius: 9999px;
 }
 
+.rounded-t-3xl {
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+
+.bg-\[\#3AEA49\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(58 234 73 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#FAC537\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 197 55 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#FC5C58\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 92 88 / var(--tw-bg-opacity));
+}
+
 .bg-\[var\(--text-color2\)\] {
   background-color: var(--text-color2);
 }
@@ -785,11 +813,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-zinc-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -808,6 +831,11 @@ video {
 .px-32 {
   padding-left: 8rem;
   padding-right: 8rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .px-5 {
@@ -915,6 +943,20 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-\[\#0A58CA\] {
+  --tw-text-opacity: 1;
+  color: rgb(10 88 202 / var(--tw-text-opacity));
+}
+
+.text-\[\#297fff\] {
+  --tw-text-opacity: 1;
+  color: rgb(41 127 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#297fff\;\] {
+  color: #297fff;;
+}
+
 .opacity-0 {
   opacity: 0;
 }
@@ -929,7 +971,7 @@ body{
   cursor: url('/CursorSvgs/Default.svg'), auto;
 }
 
-a, .modeChanger, .scroll   {
+a, .modeChanger, .scroll, .btn   {
   cursor: url('/CursorSvgs/Hand.svg'), pointer;
 }
 
@@ -1028,8 +1070,7 @@ img{
 }
 
 @media (max-width: 768px) {
-  .menu
-{
+  .menu{
     display: none;
   }
 }
@@ -1514,6 +1555,39 @@ img{
 .invertme
 {
   /* filter: invert(1); */
+}
+
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Optional: To give a background when maximized */
+}
+
+.MenuLinks {
+  position: relative;
+}
+
+.MenuLinks::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: -4px;
+  left: 0;
+  background-color: aqua;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.MenuLinks:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 @media (min-width: 640px) {

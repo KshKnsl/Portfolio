@@ -138,3 +138,37 @@ function cursorDesigning()
     });
 }
 cursorDesigning();
+
+document.querySelector("#closebtn").addEventListener("click", ()=>{
+    document.querySelector("#contactMeForm").style.display="none";
+});
+document.querySelector("#minimise").addEventListener("click", () => {
+    const minimiseMe = document.querySelector("#minimiseMe");
+    const minimiseMe2 = document.querySelector("#minimiseMe2");
+    if (minimiseMe.style.display === "none") {
+        minimiseMe.style.display = "block";
+        minimiseMe2.style.display = "flex";
+    } else {
+        minimiseMe.style.display = "none";
+        minimiseMe2.style.display = "none";
+    }
+});
+
+document.getElementById('maximise').addEventListener('click', function() {
+    const contactForm = document.querySelector('#contactMeForm');
+    contactForm.classList.toggle('fullscreen');
+  });
+
+    function openFullscreen() {
+      const elem = document.documentElement;
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.mozRequestFullScreen) { // Firefox
+        elem.mozRequestFullScreen();
+      } else if (elem.webkitRequestFullscreen) { // Chrome, Safari and Opera
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) { // IE/Edge
+        elem.msRequestFullscreen();
+      }
+    }
+    openFullscreen();
