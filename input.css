@@ -5,6 +5,7 @@
 {
   --text-color: black;
   --text-color2: white;
+  --text-color3: white;
 }
 body{   cursor: url('/CursorSvgs/Default.svg'), auto;  }
 a, .modeChanger, .scroll, .btn   {   cursor: url('/CursorSvgs/Hand.svg'), pointer;  }
@@ -196,7 +197,7 @@ img{ user-select: none;}
 }
 .outerBox {
   box-shadow: -10px -10px 10px #6359f8, 0px -10px 10px 0px #9c32e2, 10px -10px 10px #f36896, 10px 0 10px #ff0b0b, 10px 10px 10px 0px #ff5500, 0 10px 10px 0px #ff9500, -10px 10px 10px 0px #ffb700;
-  animation: rot 0.7s linear infinite;
+  /* animation: rot 0.7s linear infinite; */
   border-radius: 50%;
   display: inline-block;
   width: 610px;
@@ -210,7 +211,7 @@ img{ user-select: none;}
   grid-template-rows: repeat(2, 300px);
   gap: 10px;
   backdrop-filter: blur(2px);
-  animation: rotminus 0.7s linear infinite;
+  /* animation: rotminus 0.7s linear infinite; */
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 50%;
@@ -340,6 +341,11 @@ img{ user-select: none;}
   .page4 {
     padding: 50px 20px;
     flex-direction: column;
+  }
+  .string
+  {
+    display: none;
+  
   }
 }
 @media screen and (max-width: 450px) {
