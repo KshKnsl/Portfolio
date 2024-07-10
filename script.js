@@ -47,6 +47,38 @@ Notification.requestPermission().then(permission=>{
 });
 
 
+
+//handing hamburger menu
+var menuBtn = document.querySelector(".hamburgerMenu");
+menuBtn.addEventListener("click", function() {
+    var svg = document.querySelector(".hamburgerMenu img");
+    if(svg.src.includes("hamburger")) 
+    {
+        svg.src = "SVGs/exit.svg";
+    }
+    else 
+    {
+        svg.src = "SVGs/hamburger.svg";
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const images = document.querySelectorAll('.TechStacks div');
 const overlay = document.getElementById('overlayer');
 images.forEach(image => 
@@ -178,9 +210,13 @@ document.getElementById('maximise').addEventListener('click', function() {
 
 
   gsap.registerPlugin(ScrollTrigger,ScrollToPlugin);
-document.querySelector("#scrollButton").addEventListener("click", ()=>{
-gsap.to(window, { duration: 1, scrollTo: "#page2" });    
-});
+  document.querySelector("#scrollButton").addEventListener("click", ()=>{
+  gsap.to(window, { duration: 1, scrollTo: "#page2" });    
+  });
+
+
+function gsapPart()
+{
 
 var initialPath = `M 10 100 Q 500 100 1190 100`;
 var finalPath = `M 10 100 Q 250 100 1190 100`;
@@ -328,3 +364,7 @@ gsap.from("footer div", {
         scrub: 1,
     },
 });
+}
+if (window.innerWidth > 768) {
+    gsapPart();
+}
