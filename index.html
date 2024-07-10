@@ -14,7 +14,7 @@
 </head>
 <body class="select-text overflow-x-hidden">
     <div class="snap-mandatory">
-<div class="navbar text-2xl flex bg-[var(--text-color2)] w-full py-1 px-32 lg:justify-between md:justify-center sm:justify-center font-bold overflow-hidden absolute z-50 text-[#297fff;]">
+<div class="navbar text-2xl flex bg-[var(--text-color2)] w-full py-1 md:px-32 px-10 justify-between font-bold overflow-hidden absolute z-50 text-[#297fff;]">
     <div class="logo flex items-center justify-center" id="hearderArea">
         <img alt=""src="Images/Profile.jpg" width="50px" style="border-radius: 50%;" id="MyImage">
         <div class="flex ml-4 text-nowrap">
@@ -36,6 +36,10 @@
         <img alt=""src="/Images/charged.png" alt="">
         <p style="font-weight: 500; font-family: Impact, sans-serif; font-size: 20px;">0%</p>
     </div>
+    <div class="hamburgerMenu flex items-center justify-center md:hidden">
+      <img class="w-8 h-8" src="SVGs/hamburger.svg" alt="">
+      <!-- <img class="" src="SVGs/exit.svg" alt=""> -->
+    </div>
 </div>
 
 <div class="heroArea h-screen relative overflow-hidden snap-center bg-[var(--text-color2)]" id="Home">
@@ -43,12 +47,13 @@
         <source src="none" type="video/mp4">
     </video>
     <div class="ExtraCursor flex absolute h-[32px] text-[16px] w-fit z-50 text-white bg-slate-600 items-center opacity-0 justify-center font-bold rounded-2xl px-5 py-2 top-0 left-0">JAVA DEVELOPER ♨️ </div>
+    
     <div class="flex absolute h-[32px] w-fit z-50 items-center justify-center bottom-6 invertme">
-      <img src="Images/scroll-wheel.gif" alt="" style="height: 100px; object-fit: contain;" class="scroll" id="scrollButton">
+      <img src="Images/scroll-wheel.gif" alt="" style="height: 100px; object-fit: contain;" class="scroller" id="scrollButton">
     </div>
     <div class="relative z-10 flex-row items-center justify-center h-full mt-28 font-bold">
         <div class="namearea m-10 text-center text-[color:var(--text-color)] text-4xl">Hello👋, I'm</div>
-        <div class="name text-9xl">Kush Kansal</div>
+        <div class="name text-7xl lg:text-9xl">Kush Kansal</div>
     
         <div class="iconArea m-10" id="boxArea">
             <a href="https://www.linkedin.com/in/kushkansal/" class="box linkedin"><img alt=""src="/SVGs/linkedin.svg">
@@ -67,7 +72,7 @@
             <div class="iconText">G-Mail</div>
             </a>
         </div>
-        <div style="padding: 20px 50px; letter-spacing: 4px; text-align: center;" class="text-2xl text-wrap text-[color:var(--text-color)] mytext flex" id="mytext">
+        <div style="padding: 20px 50px; letter-spacing: 4px; text-align: center;" class="text-2xl lg:text-wrap text-[color:var(--text-color)] mytext flex" id="mytext">
             CSE @JIIT' 27 || Java  || JavaScript || Web Developer || 500+ LeetCode || Explorer</div>
     </div>         
 </div>
