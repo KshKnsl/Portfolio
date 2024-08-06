@@ -28,9 +28,13 @@ app.post('/form', async (req, res) =>
         name: req.body.name,
         email: req.body.email,
         description: req.body.message
+    }).then(() => {
+        console.log('Data inserted successfully');
+    }).catch(err => {
+        console.log(err);
     });
     res.send('Form Submitted Successfully');
-    // res.redirect('/');
+    res.redirect('/');
 });
 
 app.listen(port, () => { 
