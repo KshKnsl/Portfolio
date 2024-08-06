@@ -9,7 +9,7 @@ const db = process.env.DB_CONNECT;
 
 connectMongoDb(db)
     .then(() => console.log('Connected to MongoDB...'))
-    .catch(err => console.error('Could not connect to MongoDB...' + err));
+    .catch(err => console.log(err));
 
 const port = process.env.PORT || 3000;
 
