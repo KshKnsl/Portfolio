@@ -35,6 +35,10 @@ app.post('/form', async (req, res) =>
     res.send('Form Submitted Successfully');
     res.redirect('/');
 });
+app.get("/show", async (req, res) => {
+    const data = await contactForm.find();
+    res.send(data);
+});
 
 app.listen(port, () => { 
     console.log(`App listening at http://localhost:${port}`); 
