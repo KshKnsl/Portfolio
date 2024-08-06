@@ -33,7 +33,7 @@ app.post('/form', async (req, res) =>
         console.log(err);
     });
     res.send('Form Submitted Successfully');
-    res.redirect('/');
+    res.redirect('/');  
 });
 app.get("/show", async (req, res) => {
     const data = await contactForm.find();
