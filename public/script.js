@@ -67,18 +67,6 @@ menuBtn.addEventListener("click", function() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 const images = document.querySelectorAll('.TechStacks div');
 const overlay = document.getElementById('overlayer');
 images.forEach(image => 
@@ -124,7 +112,7 @@ function modechanger()
         string.style.display="none";
         document.querySelector("#modeChangerimg").src="/Images/light.png";
         document.documentElement.style.setProperty('--text-color', '#fff');
-        document.documentElement.style.setProperty('--text-color2', 'rgb(39 39 42)');
+        document.documentElement.style.setProperty('--text-color2', '#000');
         document.documentElement.style.setProperty('--text-color3', 'rgb(0 0 0)');
         const patterns = document.querySelectorAll('.pattern');
         patterns.forEach(pattern => {
