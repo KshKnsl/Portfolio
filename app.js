@@ -6,7 +6,6 @@ const {connectMongoDb} = require('./connection')
 const contactForm = require('./models/contact');
 dotenv.config();
 const db = process.env.MONGODB_URI;
-console.log(db);
 connectMongoDb(db)
     .then(() => console.log('Connected to MongoDB...'))
     .catch(err => console.log(err));
