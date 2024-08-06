@@ -5,7 +5,7 @@ const path = require('path');
 const {connectMongoDb} = require('./connection')
 const contactForm = require('./models/contact');
 dotenv.config();
-const db = process.env.DB_CONNECT;
+const db = process.env.MONGODB_URI;
 console.log(db);
 connectMongoDb(db)
     .then(() => console.log('Connected to MongoDB...'))
@@ -29,7 +29,8 @@ app.post('/form', async (req, res) =>
         email: req.body.email,
         description: req.body.message
     });
-    res.redirect('/');
+    res.send('Form Submitted Successfully');
+    // res.redirect('/');
 });
 
 app.listen(port, () => { 
