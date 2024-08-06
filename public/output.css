@@ -637,3 +637,14 @@ img{
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+.projBox {
+  transition: transform 0.3s ease;
+}
+
+.projBox:hover {
+  transform: scale(1.05);
+}
+.innerBox2
+{transition: transform 0.3s ease;}
+.innerBox2:hover
+{transform: scale(1.2);}
