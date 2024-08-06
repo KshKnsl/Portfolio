@@ -85,7 +85,6 @@ images.forEach(image =>
 {
     image.addEventListener('mouseenter', () => {
         overlay.style.display = 'block';
-        console.log("Here");
         image.style.zIndex="10";
     });
     
@@ -98,7 +97,6 @@ images.forEach(image =>
 });
 
 const mode = document.querySelector("#mode");
-console.log(mode);
 function modechanger()
 {
     
@@ -225,7 +223,6 @@ string.addEventListener("mousemove", (details) => {
     const rect = string.getBoundingClientRect();
     const adjustedY = details.clientY - rect.top;
     const path = `M 10 100 Q ${details.clientX} ${adjustedY} 1190 100`;
-    // console.log(adjustedY);
     gsap.to("svg path", {
         attr: { d: path },
         duration: 0.2,

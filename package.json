@@ -1,10 +1,21 @@
 {
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Welcome to my portfolio website! This is where you can learn more about me, my skills, and the projects I have worked on. Feel free to explore and get in touch if you have any questions or opportunities for collaboration.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.4.4"
   },
   "dependencies": {
+    "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
-    "mongoose": "^8.4.3"
+    "mongoose": "^8.4.3",
+    "vercel": "^35.2.3"
   }
 }
