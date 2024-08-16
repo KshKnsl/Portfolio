@@ -40,6 +40,13 @@ app.get("/show", async (req, res) => {
     res.send(data);
 });
 
+
+app.get("/:wrong", async (req, res) => {
+    res.render('404');
+});
+
+
+
 app.listen(port, () => { 
     console.log(`App listening at http://localhost:${port}`); 
 });
