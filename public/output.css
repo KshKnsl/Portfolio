@@ -4,6 +4,11 @@
   --text-color2: white;
   --text-color3: white;
 }
+
+::selection {
+  background: aquamarine;
+  color: black;
+}
   * {
     scrollbar-width: thin;
     scrollbar-color: #4ba14b #374151;
