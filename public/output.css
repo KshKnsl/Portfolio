@@ -409,7 +409,7 @@ img{
 .contact-form 
 {
   text-align: center;
-  background-color: #0b3b6bd7;
+  background-color: #1F2937;
   color: #fff;
   border-radius: 1.5rem;
   padding: 2rem;
@@ -476,7 +476,10 @@ img{
 .contact-form input[type=submit]:hover {
   background-color: #2090ff;
 }
-
+#seconf
+{
+  display: none;
+}
 @media screen and (max-width: 800px) {
   .AboutArea {
     flex-direction: column;
@@ -607,6 +610,13 @@ img{
 
   .right-down{
     transform: translateY(-170%);
+  }
+  #seconf
+  {
+    display: block;
+  }
+  #terminal {
+    display: none;
   }
 }
 
