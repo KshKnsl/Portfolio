@@ -12,6 +12,7 @@
     <link href="./output.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.17/dist/index.min.js"></script>
 </head>
 <body class="select-text overflow-x-hidden">
     <div class="snap-mandatory">
@@ -80,27 +81,52 @@
 
 
 <div id="overlayer"></div>
-<div class="pattern flex items-center AboutArea lg:px-32 lg:py-10 w-full justify-between lg:gap-4 sm:p-2 md:p-2 snap-center bg-white" id="page2">
+<div class="pattern flex items-center AboutArea lg:px-32 lg:py-6 w-full justify-between lg:gap-4 sm:p-2 md:p-2 snap-center bg-white" id="page2">
     <div class="AboutContent lg:w-2/5 sm:w-full p-4 md:w-full">
         <h3 class="text-red-700 font-bold tracking-tighter text-4xl">
             <span class="text-9xl">M</span>e and
         </h3>
-        <h3 class="text-red-700 tracking-tighter text-5xl font-bold">
+        <h3 class="text-red-700 tracking-tighter text-5xl font-bold mb-5">
             My Tech Stacks
         </h3>
-        <div class="AboutText text-[color:var(--text-color)] mt-8 text-[20px] text-justify tracking-wide" style="font-weight: 400px;" id="AboutText">
-        Hi everyone. My name is Kush Kansal and I am a second-year college student pursuing my
-        B.tech from JIIT. I have a keen interest in technological stuff. I get excited just by thinking about the
-        endless possibilities of cutting-edge technologies. Driven by a strong sense of curiosity. Currently, my
-        skills
-        are in HTML, CSS, Object Oriented programming, C, C++, and Java. I am currently learning full-stack web
-        development and DSA.
-        My unwavering determination propels me towards achieving excellence, and I aspire to contribute significantly
-        to
-        society by enhancing people's lives.
+        <div class="container px-4" id="terminal">
+          <div class="flex justify-center">
+            <div class="w-full">
+              <div class="rounded-lg overflow-hidden shadow-lg bg-gray-800">
+                <div class="bg-gray-700 flex items-center h-12 px-4">
+                  <div class="w-3 h-3 rounded-full bg-red-500 mr-2"></div>
+                  <div class="w-3 h-3 rounded-full bg-yellow-500 mr-2"></div>
+                  <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                  <div class="text-gray-400 text-center w-full hidden sm:block">
+                    guest@KshKnsl: ~
+                  </div>
+                </div>
+                <div class="bg-gray-800 text-white p-4 h-96 flex flex-col" onclick="document.getElementById('dummyKeyboard').focus();">
+                  <div class="overflow-auto flex-grow" id="terminalOutput">
+                    <div class="terminal-line">
+                      <span class="text-green-400">
+                        <div class="AboutText text-[color:white] text-[16px] text-justify tracking-wide"
+                          style="font-weight: 500;" id="AboutText">
+                          Hi everyone. My name is Kush Kansal and I am a second-year college student pursuing my
+                          B.tech from JIIT. I have a keen interest in technological stuff.
+                        </div>
+                        <span class="font-bold text-teal-500">help</span> for a list of supported commands.
+                      </span>
+                    </div>
+                  </div>
+                    <div class="terminal-line flex mt-2 p-1 border-2 border-slate-700 shadow-2xl overflow-hidden">
+                    <span class="text-green-400">➜</span>
+                    <span class="text-blue-400 mx-2">~</span>
+                    <span class="flex-grow" id="userInput"></span>
+                    <input type="text" id="dummyKeyboard" class="opacity-0 absolute overflow-hidden" autocomplete="off"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
     </div>
-
+ 
     <div class="TechStacks grid min-w-[400px] max-w-[600px]" style="grid-template-columns: repeat(5, 120px);grid-template-rows: repeat(5, 120px);" id="TechLogo">
         <div>
           <p>VS Code</p><img alt=""alt="" class="col-span-1 p-[20px]" src="/TechStacks-Logo/1.png">
@@ -432,4 +458,5 @@
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
 <script src="./script.js"></script>
+<script src="./terminal.js"></script>
 </html>
