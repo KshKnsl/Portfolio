@@ -1,95 +1,111 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>={KshKnsl}=></title>
-    <link rel="icon" type="image/x-icon" href="/Favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="./output.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.17/dist/index.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>={KshKnsl}=></title>
+  <link rel="icon" type="image/x-icon" href="/Favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="./output.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.17/dist/index.min.js"></script>
 </head>
+
 <body class="select-text overflow-x-hidden">
-    <div class="snap-mandatory">
-<div class="select-none navbar text-2xl flex bg-[var(--text-color2)] w-full py-1 md:px-32 px-10 justify-between font-bold overflow-hidden absolute z-50 text-[#297fff;]">
-    <div class="logo flex items-center justify-center" id="hearderArea">
-        <img alt=""src="Images/Profile.jpg" width="50px" style="border-radius: 50%;" id="MyImage">
-        <a href=""><div class="flex ml-4 text-nowrap">
+  <div class="snap-mandatory">
+    <div
+      class="select-none navbar text-2xl flex bg-[var(--text-color2)] w-full py-1 md:px-32 px-10 justify-between font-bold overflow-hidden absolute z-50 text-[#297fff;]">
+      <div class="logo flex items-center justify-center" id="hearderArea">
+        <img alt="" src="Images/Profile.jpg" width="50px" style="border-radius: 50%;" id="MyImage">
+        <a href="">
+          <div class="flex ml-4 text-nowrap">
             <div class="text-red-500">={</div>
             <div class="text-[color:var(--text-color)]">KshKnsl</div>
             <div class="text-red-500">}=</div>
-        </div></a>
-    </div>
-    <div class="menu select-none" id="Menu">
+          </div>
+        </a>
+      </div>
+      <div class="menu select-none" id="Menu">
         <ul class="flex items-center justify-center p-4">
-            <li><a class="mr-8 MenuLinks" href="/">Home</a></li>
-            <li><a class="mr-8 MenuLinks" href="/">About</a></li>
-            <li><a class="mr-8 MenuLinks" href="/">Projects</a></li>
-            <li><a class="mr-8 MenuLinks" href="/">Contact</a></li>
+          <li><a class="mr-8 MenuLinks" href="#Home">Home</a></li>
+          <li><a class="mr-8 MenuLinks" href="#page2">About</a></li>
+          <li><a class="mr-8 MenuLinks" href="#page3">Projects</a></li>
+          <li><a class="mr-8 MenuLinks" href="#Fourth">Contact</a></li>
         </ul>
-    </div>
-    <div class="flex items-center justify-center gap-2" id="batteryArea">
-        <img alt=""src="/SVGs/flash.svg" style="display: none; height: 20px;" class="invertme">
-        <img alt=""src="/Images/charged.png" alt="">
+      </div>
+      <div class="flex items-center justify-center gap-2" id="batteryArea">
+        <img alt="" src="/SVGs/flash.svg" style="display: none; height: 20px;" class="invertme">
+        <img alt="" src="/Images/charged.png" alt="">
         <p style="font-weight: 500; font-family: Impact, sans-serif; font-size: 20px;">0%</p>
+      </div>
+      <div class="hamburgerMenu flex items-center justify-center md:hidden">
+        <img class="w-8 h-8" src="SVGs/hamburger.svg" alt="">
+        <!-- <img class="" src="SVGs/exit.svg" alt=""> -->
+      </div>
     </div>
-    <div class="hamburgerMenu flex items-center justify-center md:hidden">
-      <img class="w-8 h-8" src="SVGs/hamburger.svg" alt="">
-      <!-- <img class="" src="SVGs/exit.svg" alt=""> -->
-    </div>
-</div>
 
-<div class="heroArea h-screen relative overflow-hidden snap-center bg-[var(--text-color2)]" id="Home">
-    <video id="river" class="absolute top-1/2 left-1/2 w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2" autoplay muted loop>
+    <div class="heroArea h-screen relative overflow-hidden snap-center bg-[var(--text-color2)]" id="Home">
+      <video id="river"
+        class="absolute top-1/2 left-1/2 w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2"
+        autoplay muted loop>
         <source src="none" type="video/mp4">
-    </video>
-    <div class="ExtraCursor flex absolute h-[32px] text-[16px] w-fit z-50 text-white bg-slate-600 items-center opacity-0 justify-center font-bold rounded-2xl px-5 py-2 top-0 left-0">JAVA DEVELOPER ♨️ </div>
-    
-    <div class="flex absolute h-[32px] w-fit z-50 items-center justify-center bottom-6 invertme">
-      <img src="Images/scroll-wheel.gif" alt="" style="height: 100px; object-fit: contain;" class="scroller" id="scrollButton">
-    </div>
-    <div class="relative z-10 flex-row items-center justify-center h-full mt-28 font-bold">
+      </video>
+      <div
+        class="ExtraCursor flex absolute h-[32px] text-[16px] w-fit z-50 text-white bg-slate-600 items-center opacity-0 justify-center font-bold rounded-2xl px-5 py-2 top-0 left-0">
+        JAVA DEVELOPER ♨️ </div>
+
+      <div class="flex absolute h-[32px] w-fit z-50 items-center justify-center bottom-6 invertme">
+        <img src="Images/scroll-wheel.gif" alt="" style="height: 100px; object-fit: contain;" class="scroller"
+          id="scrollButton">
+      </div>
+      <div class="relative z-10 flex-row items-center justify-center h-full mt-28 font-bold">
         <div class="namearea m-10 text-center text-[color:var(--text-color)] text-4xl">Hello👋, I'm</div>
         <div class="select-none name text-7xl lg:text-9xl">Kush Kansal</div>
-    
+
         <div class="iconArea m-10" id="boxArea">
-            <a href="https://www.linkedin.com/in/kushkansal/" class="box linkedin"><img alt=""src="/SVGs/linkedin.svg">
+          <a href="https://www.linkedin.com/in/kushkansal/" class="box linkedin"><img alt="" src="/SVGs/linkedin.svg">
             <div class="iconText">LinkedIn</div>
-            </a>
-            <a href="https://github.com/KushKansal" class="box github"><img alt=""src="/SVGs/github.svg">
+          </a>
+          <a href="https://github.com/KushKansal" class="box github"><img alt="" src="/SVGs/github.svg">
             <div class="iconText">GitHub</div>
-            </a>
-            <a href="https://www.instagram.com/kushkansal0/" class="box insta"><img alt=""src="/SVGs/instagram.svg">
+          </a>
+          <a href="https://www.instagram.com/kushkansal0/" class="box insta"><img alt="" src="/SVGs/instagram.svg">
             <div class="iconText">Instagram</div>
-            </a>
-            <a href="https://twitter.com/kansalkkush" class="box twitter"><img alt=""src="/SVGs/twitter-x.svg">
+          </a>
+          <a href="https://twitter.com/kansalkkush" class="box twitter"><img alt="" src="/SVGs/twitter-x.svg">
             <div class="iconText">Twitter</div>
-            </a>
-            <a href="mailto:kushkansal0@gmail.com" class="box mail"><img alt=""src="/SVGs/gmail.svg">
+          </a>
+          <a href="mailto:kushkansal0@gmail.com" class="box mail"><img alt="" src="/SVGs/gmail.svg">
             <div class="iconText">G-Mail</div>
-            </a>
+          </a>
         </div>
-        <div style="padding: 20px 50px; letter-spacing: 4px; text-align: center;" class="text-2xl lg:text-wrap text-[color:var(--text-color)] mytext flex" id="mytext">
-            CSE @JIIT' 27 || Java  || JavaScript || Web Developer || 500+ LeetCode || Explorer</div>
-    </div>         
-</div>
+        <div style="padding: 20px 50px; letter-spacing: 4px; text-align: center;"
+          class="text-2xl lg:text-wrap text-[color:var(--text-color)] mytext flex" id="mytext">
+          CSE @JIIT' 27 || Java || JavaScript || Web Developer || 500+ LeetCode || Explorer</div>
+      </div>
+    </div>
 
 
-<div id="overlayer"></div>
-<div class="pattern flex items-center AboutArea lg:px-32 lg:py-6 w-full justify-between lg:gap-4 sm:p-2 md:p-2 snap-center bg-white" id="page2">
-    <div class="AboutContent lg:w-2/5 sm:w-full p-4 md:w-full">
+    <div id="overlayer"></div>
+    <div
+      class="pattern flex items-center AboutArea lg:px-32 lg:py-6 w-full justify-between lg:gap-4 sm:p-2 md:p-2 snap-center bg-white"
+      id="page2">
+      <div class="AboutContent lg:w-2/5 sm:w-full p-4 md:w-full">
         <h3 class="select-none text-red-700 font-bold tracking-tighter text-4xl">
-            <span class="text-9xl">M</span>e and
+          <span class="text-9xl">M</span>e and
         </h3>
         <h3 class="select-none text-red-700 tracking-tighter text-5xl font-bold mb-5">
-            My Tech Stacks
+          My Tech Stacks
         </h3>
-        <div id="seconf" class="AboutText text-[color:var(--text-color)] mt-8 text-[20px] text-justify tracking-wide" style="font-weight: 400px;" id="AboutText">
+        <div id="seconf" class="AboutText text-[color:var(--text-color)] mt-8 text-[20px] text-justify tracking-wide"
+          style="font-weight: 400px;" id="AboutText">
           Hi everyone. My name is Kush Kansal and I am a second-year college student pursuing my
           B.tech from JIIT. I have a keen interest in technological stuff. I get excited just by thinking about the
           endless possibilities of cutting-edge technologies. Driven by a strong sense of curiosity. Currently, my
@@ -111,7 +127,8 @@
                     guest@KshKnsl: ~
                   </div>
                 </div>
-                <div class="bg-gray-800 text-white p-4 h-96 flex flex-col" onclick="document.getElementById('dummyKeyboard').focus();">
+                <div class="bg-gray-800 text-white p-4 h-96 flex flex-col"
+                  onclick="document.getElementById('dummyKeyboard').focus();">
                   <div class="overflow-auto flex-grow" id="terminalOutput">
                     <div class="terminal-line">
                       <span class="text-green-400">
@@ -124,343 +141,418 @@
                       </span>
                     </div>
                   </div>
-                  <div class="terminal-line flex mt-2 p-1 border-2 border-slate-700 shadow-2xl overflow-hidden min-h-8 items-center">
+                  <div
+                    class="terminal-line flex mt-2 p-1 border-2 border-slate-700 shadow-2xl overflow-hidden min-h-8 items-center">
                     <span class="text-green-400">➜</span>
                     <span class="text-blue-400 mx-2">~</span>
                     <span class="flex-grow" id="userInput"></span>
-                    <input type="text" id="dummyKeyboard" class="opacity-0 absolute overflow-hidden h-6"/>
+                    <input type="text" id="dummyKeyboard" class="opacity-0 absolute overflow-hidden h-6" />
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-    </div>
- 
-    <div class="TechStacks grid min-w-[400px] max-w-[600px]" style="grid-template-columns: repeat(5, 120px);grid-template-rows: repeat(5, 120px);" id="TechLogo">
-        <div>
-          <p>VS Code</p><img alt=""alt="" class="col-span-1 p-[20px]" src="/TechStacks-Logo/1.png">
-        </div>
-        <div>
-          <p>C++</p><img alt=""class="col-span-1 p-[20px]" src="/TechStacks-Logo/2.png">
-        </div>
-        <div>
-          <p>CSS</p><img alt=""class="col-span-1 p-[20px]" src="/TechStacks-Logo/3.webp">
-        </div>
-        <div>
-          <p>HTML</p><img alt=""class="col-span-1 p-[20px]" src="/TechStacks-Logo/4.jpg">
-        </div>
-        <div>
-          <p>JavaScript</p><img alt=""class="col-span-1 p-[20px]" src="/TechStacks-Logo/5.svg">
-        </div>
-        <div>
-          <p>Figma</p><img alt=""class="col-span-1 p-[20px]" src="/TechStacks-Logo/6.svg">
-        </div>
-        <div>
-          <p>Git</p><img alt=""class="col-span-1 p-[20px]" src="/TechStacks-Logo/7.svg">
-        </div>
-        <div>
-          <p>Java</p><img alt=""class="col-span-1 p-[20px]" src="/TechStacks-Logo/8.png">
-        </div>
-        <div>
-          <p>Express</p><img alt=""class="col-span-1 p-[20px] invertme" src="/TechStacks-Logo/9.svg">
-        </div>
-        <div>
-          <p>BootStrap</p><img alt=""class="col-span-1 p-[20px]" src="/TechStacks-Logo/10.svg">
-        </div>
-        <div>
-          <p>MongoDB</p><img alt=""class="col-span-1 p-[20px]" src="/TechStacks-Logo/11.svg">
-        </div>
-        <div>
-          <p>NodeJS</p><img alt=""class="col-span-1 p-[20px]" src="/TechStacks-Logo/12.svg">
-        </div>
-        <div>
-          <p>Postgres</p><img alt=""class="col-span-1 p-[20px]" src="/TechStacks-Logo/13.svg">
-        </div>
-        <div>
-          <p>ReactJS</p><img alt=""class="col-span-1 p-[20px]" src="/TechStacks-Logo/14.svg">
-        </div>
-        <div>
-          <p>SASS</p><img alt=""class="col-span-1 p-[20px]" src="/TechStacks-Logo/15.svg">
-        </div>
-        <div>
-          <p>TailWind CSS</p><img alt=""class="col-span-1 p-[20px]" src="/TechStacks-Logo/16.svg">
-        </div>
-        <div>
-          <p>TypeScript</p><img alt=""class="col-span-1 p-[20px]" src="/TechStacks-Logo/17.svg">
-        </div>
-        <div>
-          <p>GitHub</p><img alt=""class="col-span-1 p-[20px] invertme" src="/TechStacks-Logo/18.svg">
-        </div>
-        <div>
-          <p>Docker</p><img alt=""class="col-span-1 p-[20px]" src="/TechStacks-Logo/19.svg">
-        </div>
-        <div>
-          <p>Vercel</p><img alt=""class="col-span-1 p-[20px] invertme" src="/TechStacks-Logo/20.svg">
-        </div>
-        <div>
-          <p>C</p><img alt=""class="col-span-1 p-[20px]" src="/TechStacks-Logo/21.png">
-        </div>
-        <div>
-          <p>NPM</p><img alt=""class="col-span-1 p-[20px]" src="/TechStacks-Logo/22.svg">
-        </div>
-        <div>
-          <p>Java</p><img alt=""class="col-span-1 p-[20px]" src="/TechStacks-Logo/23.png">
-        </div>
-        <div>
-          <p>EJS</p><img alt=""class="col-span-1 p-[20px]" src="/TechStacks-Logo/24.png">
-        </div>
-        <div>
-          <p>PostMan</p><img alt=""class="col-span-1 p-[20px]" src="/TechStacks-Logo/25.svg">
-        </div>
-        </div>
-</div>
+      </div>
 
-<div class="string flex h-[150px] w-full items-center justify-center">
-  <svg width="1200" height="150">
-      <path d="M 10 100 Q 500 100 1190 100" fill="transparent" stroke-width="4" stroke="black"></path>
-  </svg>
-</div>
+      <div class="TechStacks grid min-w-[400px] max-w-[600px]"
+        style="grid-template-columns: repeat(5, 120px);grid-template-rows: repeat(5, 120px);" id="TechLogo">
+        <div>
+          <p>VS Code</p><img alt="" alt="" class="col-span-1 p-[20px]" src="/TechStacks-Logo/1.png">
+        </div>
+        <div>
+          <p>C++</p><img alt="" class="col-span-1 p-[20px]" src="/TechStacks-Logo/2.png">
+        </div>
+        <div>
+          <p>CSS</p><img alt="" class="col-span-1 p-[20px]" src="/TechStacks-Logo/3.webp">
+        </div>
+        <div>
+          <p>HTML</p><img alt="" class="col-span-1 p-[20px]" src="/TechStacks-Logo/4.jpg">
+        </div>
+        <div>
+          <p>JavaScript</p><img alt="" class="col-span-1 p-[20px]" src="/TechStacks-Logo/5.svg">
+        </div>
+        <div>
+          <p>Figma</p><img alt="" class="col-span-1 p-[20px]" src="/TechStacks-Logo/6.svg">
+        </div>
+        <div>
+          <p>Git</p><img alt="" class="col-span-1 p-[20px]" src="/TechStacks-Logo/7.svg">
+        </div>
+        <div>
+          <p>Java</p><img alt="" class="col-span-1 p-[20px]" src="/TechStacks-Logo/8.png">
+        </div>
+        <div>
+          <p>Express</p><img alt="" class="col-span-1 p-[20px] invertme" src="/TechStacks-Logo/9.svg">
+        </div>
+        <div>
+          <p>BootStrap</p><img alt="" class="col-span-1 p-[20px]" src="/TechStacks-Logo/10.svg">
+        </div>
+        <div>
+          <p>MongoDB</p><img alt="" class="col-span-1 p-[20px]" src="/TechStacks-Logo/11.svg">
+        </div>
+        <div>
+          <p>NodeJS</p><img alt="" class="col-span-1 p-[20px]" src="/TechStacks-Logo/12.svg">
+        </div>
+        <div>
+          <p>Postgres</p><img alt="" class="col-span-1 p-[20px]" src="/TechStacks-Logo/13.svg">
+        </div>
+        <div>
+          <p>ReactJS</p><img alt="" class="col-span-1 p-[20px]" src="/TechStacks-Logo/14.svg">
+        </div>
+        <div>
+          <p>SASS</p><img alt="" class="col-span-1 p-[20px]" src="/TechStacks-Logo/15.svg">
+        </div>
+        <div>
+          <p>TailWind CSS</p><img alt="" class="col-span-1 p-[20px]" src="/TechStacks-Logo/16.svg">
+        </div>
+        <div>
+          <p>TypeScript</p><img alt="" class="col-span-1 p-[20px]" src="/TechStacks-Logo/17.svg">
+        </div>
+        <div>
+          <p>GitHub</p><img alt="" class="col-span-1 p-[20px] invertme" src="/TechStacks-Logo/18.svg">
+        </div>
+        <div>
+          <p>Docker</p><img alt="" class="col-span-1 p-[20px]" src="/TechStacks-Logo/19.svg">
+        </div>
+        <div>
+          <p>Vercel</p><img alt="" class="col-span-1 p-[20px] invertme" src="/TechStacks-Logo/20.svg">
+        </div>
+        <div>
+          <p>C</p><img alt="" class="col-span-1 p-[20px]" src="/TechStacks-Logo/21.png">
+        </div>
+        <div>
+          <p>NPM</p><img alt="" class="col-span-1 p-[20px]" src="/TechStacks-Logo/22.svg">
+        </div>
+        <div>
+          <p>Java</p><img alt="" class="col-span-1 p-[20px]" src="/TechStacks-Logo/23.png">
+        </div>
+        <div>
+          <p>EJS</p><img alt="" class="col-span-1 p-[20px]" src="/TechStacks-Logo/24.png">
+        </div>
+        <div>
+          <p>PostMan</p><img alt="" class="col-span-1 p-[20px]" src="/TechStacks-Logo/25.svg">
+        </div>
+      </div>
+    </div>
+
+    <div class="string flex h-[150px] w-full items-center justify-center">
+      <svg width="1200" height="150">
+        <path d="M 10 100 Q 500 100 1190 100" fill="transparent" stroke-width="4" stroke="black"></path>
+      </svg>
+    </div>
 
 
 
-<div class="ProjectPage pattern">
-  <h1 class="mb-8 mt-0 text-6xl leading-tight select-none text-red-700 text-center font-bold">
-    <u>My Projects</u>
-  </h1>
-<div class="pt-5 pb-10 px-10 snap-center flex lg:flex-row flex-col items-center justify-center gap-10 flex-wrap">
-  <div class="max-w-[26rem] whitespace-normal break-words rounded-lg border border-blue-gray-50 projBox bg-[var(--text-color2)] p-4 font-sans text-sm font-normal text-blue-gray-500 shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)] focus:outline-none">
-    <div class="mb-2 flex items-center gap-3">
-      <div class="text-[color:var(--text-color)] block font-sans text-base font-medium leading-relaxed tracking-normal text-blue-gray-900 antialiased transition-colors hover:text-pink-500">
-       URL Shortener
-      </div>
-      <div
-        class="center relative inline-block select-none whitespace-nowrap innerBox2  rounded-full bg-orange-500 py-1 px-2 align-baseline font-sans text-xs font-medium capitalize leading-none tracking-wide text-white">
-        <a class="mt-px" href="https://tinyu.vercel.app/">Live</a>
-      </div>
-      <div
-        class="center relative inline-block select-none whitespace-nowrap innerBox2  rounded-full bg-lime-500 py-1 px-2 align-baseline font-sans text-xs font-medium capitalize leading-none tracking-wide text-white">
-        <a class="mt-px" href="https://github.com/KushKansal/URL-Shorten">Code</a>
-      </div>
-    </div>
-    <p class="block font-sans text-sm font-normal leading-normal text-[color:var(--text-color)] opacity-70 antialiased">
-      This is a free tool to shorten URLs and generate QR code & links making it easy to share.
-    <div class="mt-4 flex items-center gap-5">
-      <div class="flex items-center gap-1">
-        <span class="h-3 w-3 rounded-full bg-green-600"></span>
-        <p class="block font-sans text-xs font-normal text-[color:var(--text-color)] opacity-70 antialiased">
-          NodeJS &nbsp;&nbsp;
-        </p><span class="h-3 w-3 rounded-full bg-indigo-600"></span>
-        <p class="block font-sans text-xs font-normal text-[color:var(--text-color)] opacity-70 antialiased">
-          EJS
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="max-w-[26rem] whitespace-normal break-words rounded-lg border border-blue-gray-50 projBox bg-[var(--text-color2)] p-4 font-sans text-sm font-normal text-blue-gray-500 shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)] focus:outline-none">
-    <div class="mb-2 flex items-center gap-3">
-      <div class="text-[color:var(--text-color)] block font-sans text-base font-medium leading-relaxed tracking-normal antialiased transition-colors hover:text-pink-500">Portfolio-Site</div>
-      <div class="center relative inline-block select-none whitespace-nowrap innerBox2  rounded-full bg-purple-500 py-1 px-2 align-baseline font-sans text-xs font-medium capitalize leading-none tracking-wide text-white">
-        <a class="mt-px" href="#">Live</a>
-      </div>
-      <div
-        class="center relative inline-block select-none whitespace-nowrap innerBox2  rounded-full bg-amber-500 py-1 px-2 align-baseline font-sans text-xs font-medium capitalize leading-none tracking-wide text-white">
-        <a class="mt-px" href="https://github.com/KushKansal/Portfolio">Code</a>
-      </div>
-    </div>
-    <p class="block font-sans text-sm font-normal leading-normal text-[color:var(--text-color)] opacity-70 antialiased"> 
-      My portfolio website! This is where you can learn more about me, my skills, projects, and experiences.
-    </p>
-    <div class="mt-4 flex items-center gap-5">
-      <div class="flex items-center gap-1">
-        <span class="h-3 w-3 rounded-full bg-red-600"></span>
-        <p class="block font-sans text-xs font-normal text-[color:var(--text-color)] opacity-70 antialiased">
-          HTML &nbsp;&nbsp;
-        </p>
-        <span class="h-3 w-3 rounded-full bg-blue-800"></span>
-        <p class="block font-sans text-xs font-normal text-[color:var(--text-color)] opacity-70 antialiased">
-          TailWindCSS
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="max-w-[26rem] whitespace-normal break-words rounded-lg border border-blue-gray-50 projBox bg-[var(--text-color2)] p-4 font-sans text-sm font-normal text-blue-gray-500 shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)] focus:outline-none">
-    <div class="mb-2 flex items-center gap-3">
-      <div class="text-[color:var(--text-color)] block font-sans text-base font-medium leading-relaxed tracking-normal text-blue-gray-900 antialiased transition-colors hover:text-pink-500">
-        Some Mini Games
-      </div>
-      <div
-        class="center relative inline-block select-none whitespace-nowrap innerBox2  rounded-full bg-green-500 py-1 px-2 align-baseline font-sans text-xs font-medium capitalize leading-none tracking-wide text-white">
-        <a class="mt-px" href="https://github.com/KushKansal/BEN10-PUZZLE">Live</a>
-      </div>
-      <div
-        class="center relative inline-block select-none whitespace-nowrap innerBox2  rounded-full bg-cyan-500 py-1 px-2 align-baseline font-sans text-xs font-medium capitalize leading-none tracking-wide text-white">
-        <a class="mt-px" href="https://github.com/KushKansal/Sudoku">Code</a>
-      </div>
-    </div>
-    <p class="block font-sans text-sm font-normal leading-normal text-[color:var(--text-color)] opacity-70 antialiased"> Created a Sudoku Game and Ben10 Puzzle Game while learning basics of FrontEnd.</p>
-    <div class="mt-4 flex items-center gap-5">
-      <div class="flex items-center gap-1">
-        <span class="h-3 w-3 rounded-full bg-red-600"></span>
-        <p class="block font-sans text-xs font-normal text-[color:var(--text-color)] opacity-70 antialiased">
-          HTML &nbsp;&nbsp;
-        </p>
-        <span class="h-3 w-3 rounded-full bg-blue-600"></span>
-        <p class="block font-sans text-xs font-normal text-[color:var(--text-color)] opacity-70 antialiased">
-          CSS &nbsp;&nbsp;
-        </p><span class="h-3 w-3 rounded-full bg-yellow-500"></span>
-        <p class="block font-sans text-xs font-normal text-[color:var(--text-color)] opacity-70 antialiased">
-          JavaScript&nbsp;&nbsp;
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="max-w-[26rem] whitespace-normal break-words rounded-lg border border-blue-gray-50 projBox bg-[var(--text-color2)] p-4 font-sans text-sm font-normal text-blue-gray-500 shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)] focus:outline-none">
-    <div class="mb-2 flex items-center gap-3">
-      <div class="text-[color:var(--text-color)] block font-sans text-base font-medium leading-relaxed tracking-normal antialiased transition-colors hover:text-pink-500">Wheel Buddy</div>
-      <div class="center relative inline-block select-none whitespace-nowrap innerBox2  rounded-full bg-emerald-500 py-1 px-2 align-baseline font-sans text-xs font-medium capitalize leading-none tracking-wide text-white">
-        <a href="https://github.com/KushKansal/WheelBuddy" class="mt-px">Live</a>
-      </div>
-      <div
-        class="center relative inline-block select-none whitespace-nowrap innerBox2  rounded-full bg-sky-500 py-1 px-2 align-baseline font-sans text-xs font-medium capitalize leading-none tracking-wide text-white">
-        <a class="mt-px" href="https://github.com/KushKansal/WheelBuddy">Code</a>
-      </div>
-    </div>
-    <p class="block font-sans text-sm font-normal leading-normal text-[color:var(--text-color)] opacity-70 antialiased">
-      A Console Based car booking and car-pooling system based on C++.
-    </p>
-    <div class="mt-4 flex items-center gap-5">
-      <div class="flex items-center gap-1">
-        <span class="h-3 w-3 rounded-full bg-pink-600"></span>
-        <p class="block font-sans text-xs font-normal text-[color:var(--text-color)] opacity-70 antialiased">
-          C++
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="max-w-[26rem] whitespace-normal break-words rounded-lg border border-blue-gray-50 projBox bg-[var(--text-color2)] p-4 font-sans text-sm font-normal text-blue-gray-500 shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)] focus:outline-none">
-    <div class="mb-2 flex items-center gap-3">
-      <div class="text-[color:var(--text-color)] block font-sans text-base font-medium leading-relaxed tracking-normal text-blue-gray-900 antialiased transition-colors hover:text-pink-500">
-        Task Master
-    </div>
-      <div class="center relative inline-block select-none whitespace-nowrap innerBox2  rounded-full bg-rose-500 py-1 px-2 align-baseline font-sans text-xs font-medium capitalize leading-none tracking-wide text-white">
-        <a href="https://github.com/KushKansal/TaskMaster-X" class="mt-px">Live</a>
-      </div>
-      <div
-        class="center relative inline-block select-none whitespace-nowrap innerBox2  rounded-full bg-teal-500 py-1 px-2 align-baseline font-sans text-xs font-medium capitalize leading-none tracking-wide text-white">
-        <a class="mt-px" href="https://github.com/KushKansal/TaskMaster-X">Code</a>
-      </div>
-    </div>
-    <p class="block font-sans text-sm font-normal leading-normal text-[color:var(--text-color)] opacity-70 antialiased"> 
-      A console based To-Do List in C language. TaskMaster simplifies task management and helps you stay organized.
-    </p>
-    <div class="mt-4 flex items-center gap-5">
-      <div class="flex items-center gap-1">
-        <span class="h-3 w-3 rounded-full bg-gray-600"></span>
-        <p class="block font-sans text-xs font-normal text-[color:var(--text-color)] opacity-70 antialiased">
-          C
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="max-w-[26rem] whitespace-normal break-words rounded-lg border border-blue-gray-50 projBox bg-[var(--text-color2)] p-4 font-sans text-sm font-normal text-blue-gray-500 shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)] focus:outline-none">
-    <div class="mb-2 flex items-center gap-3">
-      <div class="text-[color:var(--text-color)] block font-sans text-base font-medium leading-relaxed tracking-normal text-blue-gray-900 antialiased transition-colors hover:text-pink-500">
-        Basic Text Editor
-      </div>
-      <div
-        class="center relative inline-block select-none whitespace-nowrap innerBox2  rounded-full bg-slate-500 py-1 px-2 align-baseline font-sans text-xs font-medium capitalize leading-none tracking-wide text-white">
-        <a class="mt-px" href="https://github.com/KushKansal/TextEditor">Live</a>
-      </div>
-      <div
-        class="center relative inline-block select-none whitespace-nowrap innerBox2  rounded-full bg-indigo-600 py-1 px-2 align-baseline font-sans text-xs font-medium capitalize leading-none tracking-wide text-white">
-        <a class="mt-px" href="https://github.com/KushKansal/TextEditor">Code</a>
-      </div>
-    </div>
-    <p class="block font-sans text-sm font-normal leading-normal text-[color:var(--text-color)] opacity-70 antialiased"> 
-      A console based Text Editor made in Java to perform basic tasks like cut, copy, paste, delete and edit.</p>
-    <div class="mt-4 flex items-center gap-5">
-      <div class="flex items-center gap-1">
-        <span class="h-3 w-3 rounded-full bg-yellow-700"></span>
-        <p class="block font-sans text-xs font-normal text-[color:var(--text-color)] opacity-70 antialiased">
-          JAVA
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-<div class="pattern page4 min-h-screen overflow-hidden snap-center lg:flex-row flex-col items-center lg:justify-between justify-center gap-8" id="Fourth">
-    <div class="flex items-center justify-center" id="contactMeForm">
-      <div class="relative sm:max-w-xl sm:mx-auto">
-        <div class="contact-form lg:w-[600px] md:w-[600px] sm:w-[400px] relative">
-          <div class="absolute left-0 top-0 bg-[#374151] w-full rounded-r-3xl-3xl rounded-t-3xl py-2 px-4 flex gap-2">
-            <div id="closebtn" class="btn w-4 h-4 bg-[#FC5C58] rounded-full"></div>
-            <div id="minimise" class="btn w-4 h-4 bg-[#FAC537] rounded-full"></div>
-            <div id="maximise" class="btn w-4 h-4 bg-[#3AEA49] rounded-full"></div>
+    <div class="ProjectPage pattern" id="page3">
+      <h1 class="mb-8 mt-0 text-6xl leading-tight select-none text-red-700 text-center font-bold">
+        <u>My Projects</u>
+      </h1>
+      <div class="pt-5 pb-10 px-10 snap-center flex lg:flex-row flex-col items-center justify-center gap-10 flex-wrap">
+        <div
+          class="max-w-[26rem] whitespace-normal break-words rounded-lg border border-blue-gray-50 projBox bg-[var(--text-color2)] p-4 font-sans text-sm font-normal text-blue-gray-500 shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)] focus:outline-none">
+          <div class="mb-2 flex items-center gap-3">
+            <div
+              class="text-[color:var(--text-color)] block font-sans text-base font-medium leading-relaxed tracking-normal text-blue-gray-900 antialiased transition-colors hover:text-pink-500">
+              URL Shortener
+            </div>
+            <div
+              class="center relative inline-block select-none whitespace-nowrap innerBox2  rounded-full bg-orange-500 py-1 px-2 align-baseline font-sans text-xs font-medium capitalize leading-none tracking-wide text-white">
+              <a class="mt-px" href="https://tinyu.vercel.app/">Live</a>
+            </div>
+            <div
+              class="center relative inline-block select-none whitespace-nowrap innerBox2  rounded-full bg-lime-500 py-1 px-2 align-baseline font-sans text-xs font-medium capitalize leading-none tracking-wide text-white">
+              <a class="mt-px" href="https://github.com/KushKansal/URL-Shorten">Code</a>
+            </div>
           </div>
-          <div class="text-center" id="minimiseMe">
-            <h3 class="select-none tracking-tighter font-bold">Contact Me</h3>
-            <p class="text-gray-300">
-              Fill up the form below to send me a message.
-            </p>
+          <p
+            class="block font-sans text-sm font-normal leading-normal text-[color:var(--text-color)] opacity-70 antialiased">
+            This is a free tool to shorten URLs and generate QR code & links making it easy to share.
+          <div class="mt-4 flex items-center gap-5">
+            <div class="flex items-center gap-1">
+              <span class="h-3 w-3 rounded-full bg-green-600"></span>
+              <p class="block font-sans text-xs font-normal text-[color:var(--text-color)] opacity-70 antialiased">
+                NodeJS &nbsp;&nbsp;
+              </p><span class="h-3 w-3 rounded-full bg-indigo-600"></span>
+              <p class="block font-sans text-xs font-normal text-[color:var(--text-color)] opacity-70 antialiased">
+                EJS
+              </p>
+            </div>
           </div>
-          <form action="/form" method="post" id="minimiseMe2">
-            <input type="name" placeholder="Name" name="name" required>
-            <input type="email" placeholder="Email" name="email" required>
-            <input type="tel" placeholder="Contact No." name="contactNo">
-            <textarea placeholder="Type your message here..." name="message" required></textarea>
-            <input type="submit" value="Send ➤">
-          </form>
+        </div>
+        <div
+          class="max-w-[26rem] whitespace-normal break-words rounded-lg border border-blue-gray-50 projBox bg-[var(--text-color2)] p-4 font-sans text-sm font-normal text-blue-gray-500 shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)] focus:outline-none">
+          <div class="mb-2 flex items-center gap-3">
+            <div
+              class="text-[color:var(--text-color)] block font-sans text-base font-medium leading-relaxed tracking-normal antialiased transition-colors hover:text-pink-500">
+              Portfolio-Site</div>
+            <div
+              class="center relative inline-block select-none whitespace-nowrap innerBox2  rounded-full bg-purple-500 py-1 px-2 align-baseline font-sans text-xs font-medium capitalize leading-none tracking-wide text-white">
+              <a class="mt-px" href="#">Live</a>
+            </div>
+            <div
+              class="center relative inline-block select-none whitespace-nowrap innerBox2  rounded-full bg-amber-500 py-1 px-2 align-baseline font-sans text-xs font-medium capitalize leading-none tracking-wide text-white">
+              <a class="mt-px" href="https://github.com/KushKansal/Portfolio">Code</a>
+            </div>
+          </div>
+          <p
+            class="block font-sans text-sm font-normal leading-normal text-[color:var(--text-color)] opacity-70 antialiased">
+            My portfolio website! This is where you can learn more about me, my skills, projects, and experiences.
+          </p>
+          <div class="mt-4 flex items-center gap-5">
+            <div class="flex items-center gap-1">
+              <span class="h-3 w-3 rounded-full bg-red-600"></span>
+              <p class="block font-sans text-xs font-normal text-[color:var(--text-color)] opacity-70 antialiased">
+                HTML &nbsp;&nbsp;
+              </p>
+              <span class="h-3 w-3 rounded-full bg-blue-800"></span>
+              <p class="block font-sans text-xs font-normal text-[color:var(--text-color)] opacity-70 antialiased">
+                TailWindCSS
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="max-w-[26rem] whitespace-normal break-words rounded-lg border border-blue-gray-50 projBox bg-[var(--text-color2)] p-4 font-sans text-sm font-normal text-blue-gray-500 shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)] focus:outline-none">
+          <div class="mb-2 flex items-center gap-3">
+            <div
+              class="text-[color:var(--text-color)] block font-sans text-base font-medium leading-relaxed tracking-normal text-blue-gray-900 antialiased transition-colors hover:text-pink-500">
+              Some Mini Games
+            </div>
+            <div
+              class="center relative inline-block select-none whitespace-nowrap innerBox2  rounded-full bg-green-500 py-1 px-2 align-baseline font-sans text-xs font-medium capitalize leading-none tracking-wide text-white">
+              <a class="mt-px" href="https://github.com/KushKansal/BEN10-PUZZLE">Live</a>
+            </div>
+            <div
+              class="center relative inline-block select-none whitespace-nowrap innerBox2  rounded-full bg-cyan-500 py-1 px-2 align-baseline font-sans text-xs font-medium capitalize leading-none tracking-wide text-white">
+              <a class="mt-px" href="https://github.com/KushKansal/Sudoku">Code</a>
+            </div>
+          </div>
+          <p
+            class="block font-sans text-sm font-normal leading-normal text-[color:var(--text-color)] opacity-70 antialiased">
+            Created a Sudoku Game and Ben10 Puzzle Game while learning basics of FrontEnd.</p>
+          <div class="mt-4 flex items-center gap-5">
+            <div class="flex items-center gap-1">
+              <span class="h-3 w-3 rounded-full bg-red-600"></span>
+              <p class="block font-sans text-xs font-normal text-[color:var(--text-color)] opacity-70 antialiased">
+                HTML &nbsp;&nbsp;
+              </p>
+              <span class="h-3 w-3 rounded-full bg-blue-600"></span>
+              <p class="block font-sans text-xs font-normal text-[color:var(--text-color)] opacity-70 antialiased">
+                CSS &nbsp;&nbsp;
+              </p><span class="h-3 w-3 rounded-full bg-yellow-500"></span>
+              <p class="block font-sans text-xs font-normal text-[color:var(--text-color)] opacity-70 antialiased">
+                JavaScript&nbsp;&nbsp;
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="max-w-[26rem] whitespace-normal break-words rounded-lg border border-blue-gray-50 projBox bg-[var(--text-color2)] p-4 font-sans text-sm font-normal text-blue-gray-500 shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)] focus:outline-none">
+          <div class="mb-2 flex items-center gap-3">
+            <div
+              class="text-[color:var(--text-color)] block font-sans text-base font-medium leading-relaxed tracking-normal antialiased transition-colors hover:text-pink-500">
+              Wheel Buddy</div>
+            <div
+              class="center relative inline-block select-none whitespace-nowrap innerBox2  rounded-full bg-emerald-500 py-1 px-2 align-baseline font-sans text-xs font-medium capitalize leading-none tracking-wide text-white">
+              <a href="https://github.com/KushKansal/WheelBuddy" class="mt-px">Live</a>
+            </div>
+            <div
+              class="center relative inline-block select-none whitespace-nowrap innerBox2  rounded-full bg-sky-500 py-1 px-2 align-baseline font-sans text-xs font-medium capitalize leading-none tracking-wide text-white">
+              <a class="mt-px" href="https://github.com/KushKansal/WheelBuddy">Code</a>
+            </div>
+          </div>
+          <p
+            class="block font-sans text-sm font-normal leading-normal text-[color:var(--text-color)] opacity-70 antialiased">
+            A Console Based car booking and car-pooling system based on C++.
+          </p>
+          <div class="mt-4 flex items-center gap-5">
+            <div class="flex items-center gap-1">
+              <span class="h-3 w-3 rounded-full bg-pink-600"></span>
+              <p class="block font-sans text-xs font-normal text-[color:var(--text-color)] opacity-70 antialiased">
+                C++
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="max-w-[26rem] whitespace-normal break-words rounded-lg border border-blue-gray-50 projBox bg-[var(--text-color2)] p-4 font-sans text-sm font-normal text-blue-gray-500 shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)] focus:outline-none">
+          <div class="mb-2 flex items-center gap-3">
+            <div
+              class="text-[color:var(--text-color)] block font-sans text-base font-medium leading-relaxed tracking-normal text-blue-gray-900 antialiased transition-colors hover:text-pink-500">
+              Task Master
+            </div>
+            <div
+              class="center relative inline-block select-none whitespace-nowrap innerBox2  rounded-full bg-rose-500 py-1 px-2 align-baseline font-sans text-xs font-medium capitalize leading-none tracking-wide text-white">
+              <a href="https://github.com/KushKansal/TaskMaster-X" class="mt-px">Live</a>
+            </div>
+            <div
+              class="center relative inline-block select-none whitespace-nowrap innerBox2  rounded-full bg-teal-500 py-1 px-2 align-baseline font-sans text-xs font-medium capitalize leading-none tracking-wide text-white">
+              <a class="mt-px" href="https://github.com/KushKansal/TaskMaster-X">Code</a>
+            </div>
+          </div>
+          <p
+            class="block font-sans text-sm font-normal leading-normal text-[color:var(--text-color)] opacity-70 antialiased">
+            A console based To-Do List in C language. TaskMaster simplifies task management and helps you stay
+            organized.
+          </p>
+          <div class="mt-4 flex items-center gap-5">
+            <div class="flex items-center gap-1">
+              <span class="h-3 w-3 rounded-full bg-gray-600"></span>
+              <p class="block font-sans text-xs font-normal text-[color:var(--text-color)] opacity-70 antialiased">
+                C
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="max-w-[26rem] whitespace-normal break-words rounded-lg border border-blue-gray-50 projBox bg-[var(--text-color2)] p-4 font-sans text-sm font-normal text-blue-gray-500 shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)] focus:outline-none">
+          <div class="mb-2 flex items-center gap-3">
+            <div
+              class="text-[color:var(--text-color)] block font-sans text-base font-medium leading-relaxed tracking-normal text-blue-gray-900 antialiased transition-colors hover:text-pink-500">
+              Basic Text Editor
+            </div>
+            <div
+              class="center relative inline-block select-none whitespace-nowrap innerBox2  rounded-full bg-slate-500 py-1 px-2 align-baseline font-sans text-xs font-medium capitalize leading-none tracking-wide text-white">
+              <a class="mt-px" href="https://github.com/KushKansal/TextEditor">Live</a>
+            </div>
+            <div
+              class="center relative inline-block select-none whitespace-nowrap innerBox2  rounded-full bg-indigo-600 py-1 px-2 align-baseline font-sans text-xs font-medium capitalize leading-none tracking-wide text-white">
+              <a class="mt-px" href="https://github.com/KushKansal/TextEditor">Code</a>
+            </div>
+          </div>
+          <p
+            class="block font-sans text-sm font-normal leading-normal text-[color:var(--text-color)] opacity-70 antialiased">
+            A console based Text Editor made in Java to perform basic tasks like cut, copy, paste, delete and edit.</p>
+          <div class="mt-4 flex items-center gap-5">
+            <div class="flex items-center gap-1">
+              <span class="h-3 w-3 rounded-full bg-yellow-700"></span>
+              <p class="block font-sans text-xs font-normal text-[color:var(--text-color)] opacity-70 antialiased">
+                JAVA
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="contactCircle select-none" style="display: flex; align-items: center; justify-content: center;">
-      <div class="outerBox">
-        <div class="boxArea">
-          <a href="https://www.linkedin.com/in/kushkansal/" class="box linkedin"
-            style="border-radius: 100% 0 0 0; display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 10px;"
-            target="_blank"><img alt=""src="/SVGs/linkedin.svg">
-            <div class="iconText left-up-first">LinkedIn</div>
-            <div class="iconText left-up">LinkedIn</div>
-          </a>
-          <a href="https://github.com/KushKansal" class="box github"
-            style="border-radius: 0 100% 0 0; display: flex; justify-content: center; align-items: center;  flex-direction: column; gap: 10px;"
-            target="_blank"><img alt=""src="/SVGs/github.svg">
-            <div class="iconText right-up-first">GitHub</div>
-            <div class="iconText right-up">GitHub</div>
-        </a>
-          <a href="https://www.instagram.com/kushkansal0/" class="box insta"
-            style="border-radius: 0 0 0 100%; display: flex; justify-content: center; align-items: center;  flex-direction: column; gap: 10px;"
-            target="_blank"><img alt=""src="/SVGs/instagram.svg">
-            <div class="iconText left-down-first">Instagram &nbsp</div>
-            <div class="iconText left-down">Instagram</div>
-        </a>
-          <a href="mailto:kushkansal0@gmail.com" class="box gmail"
-            style=" border-radius: 0 0 100% 0; display: flex; justify-content: center; align-items: center;  flex-direction: column; gap: 10px;"
-            target="_blank"><img alt=""src="/SVGs/gmail.svg">
-            <div class="iconText right-down-first">G-Mail</div>
-            <div class="iconText right-down">G-Mail</div>
-          </a>
+    <div
+      class="pattern page4 min-h-screen overflow-hidden snap-center lg:flex-row flex-col items-center lg:justify-between justify-center gap-8"
+      id="Fourth">
+      <div class="flex items-center justify-center" id="contactMeForm">
+        <div class="relative sm:max-w-xl sm:mx-auto">
+          <div class="contact-form lg:w-[600px] md:w-[600px] sm:w-[400px] relative">
+            <div class="absolute left-0 top-0 bg-[#374151] w-full rounded-r-3xl-3xl rounded-t-3xl py-2 px-4 flex gap-2">
+              <div id="closebtn" class="btn w-4 h-4 bg-[#FC5C58] rounded-full"></div>
+              <div id="minimise" class="btn w-4 h-4 bg-[#FAC537] rounded-full"></div>
+              <div id="maximise" class="btn w-4 h-4 bg-[#3AEA49] rounded-full"></div>
+            </div>
+            <div class="text-center" id="minimiseMe">
+              <h3 class="select-none tracking-tighter font-bold">Contact Me</h3>
+              <p class="text-gray-300">
+                Fill up the form below to send me a message.
+              </p>
+            </div>
+            <form action="/form" method="post" id="minimiseMe2">
+              <input type="name" placeholder="Name" name="name" required>
+              <input type="email" placeholder="Email" name="email" required>
+              <input type="tel" placeholder="Contact No." name="contactNo">
+              <textarea placeholder="Type your message here..." name="message" required></textarea>
+              <input type="submit" value="Send ➤">
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-center min-h-screen select-none">
+        <div class="relative w-[610px] h-[610px] rounded-full overflow-hidden shadow-2xl">
+          <div class="absolute inset-0 bg-gradient-to-br from-[#6359f8] via-[#9c32e2] to-[#ff9500] animate-gradient">
+          </div>
+
+          <div class="relative w-full h-full grid grid-cols-2 grid-rows-2 gap-[1px] bg-white/10 backdrop-blur-md">
+            <a href="https://www.linkedin.com/in/kushkansal/" class="relative flex flex-col items-center justify-center gap-4 bg-white/10 backdrop-blur-sm 
+                              transition-all duration-300 hover:bg-[#0A66C2]/90 group overflow-hidden"
+              style="border-radius: 100% 0 0 0;" target="_blank">
+              <svg viewBox="0 0 24 24"
+                class="w-12 h-12 fill-white transition-transform duration-300 group-hover:scale-110 group-hover:rotate-[5deg]">
+                <path
+                  d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z" />
+              </svg>
+              <div
+                class="absolute bottom-0 w-full transform translate-y-full transition-transform duration-300 group-hover:translate-y-0">
+                <div class="bg-black/50 backdrop-blur-sm p-2 text-center">
+                  <span class="text-xl font-semibold text-white">LinkedIn</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="https://github.com/KushKansal" class="relative flex flex-col items-center justify-center gap-4 bg-white/10 backdrop-blur-sm 
+                              transition-all duration-300 hover:bg-[#333]/90 group overflow-hidden"
+              style="border-radius: 0 100% 0 0;" target="_blank">
+              <svg viewBox="0 0 24 24"
+                class="w-12 h-12 fill-white transition-transform duration-300 group-hover:scale-110 group-hover:rotate-[5deg]">
+                <path
+                  d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12c0-5.523-4.477-10-10-10z" />
+              </svg>
+              <div
+                class="absolute bottom-0 w-full transform translate-y-full transition-transform duration-300 group-hover:translate-y-0">
+                <div class="bg-black/50 backdrop-blur-sm p-2 text-center">
+                  <span class="text-xl font-semibold text-white">GitHub</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="https://www.instagram.com/kushkansal0/"
+              class="relative flex flex-col items-center justify-center gap-4 bg-white/10 backdrop-blur-sm 
+                              transition-all duration-300 hover:bg-gradient-to-r hover:from-purple-500/90 hover:to-pink-500/90 group overflow-hidden"
+              style="border-radius: 0 0 0 100%;" target="_blank">
+              <svg viewBox="0 0 24 24"
+                class="w-12 h-12 fill-white transition-transform duration-300 group-hover:scale-110 group-hover:rotate-[5deg]">
+                <path
+                  d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z" />
+              </svg>
+              <div
+                class="absolute top-0 w-full transform -translate-y-full transition-transform duration-300 group-hover:-translate-y-0">
+                <div class="bg-black/50 backdrop-blur-sm p-2 text-center">
+                  <span class="text-xl font-semibold text-white">Instagram</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="mailto:kushkansal0@gmail.com" class="relative flex flex-col items-center justify-center gap-4 bg-white/10 backdrop-blur-sm 
+                              transition-all duration-300 hover:bg-[#EA4335]/90 group overflow-hidden"
+              style="border-radius: 0 0 100% 0;" target="_blank">
+              <svg viewBox="0 0 24 24"
+                class="w-12 h-12 fill-white transition-transform duration-300 group-hover:scale-110 group-hover:rotate-[5deg]">
+                <path
+                  d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+              </svg>
+              <div
+                class="absolute top-0 w-full transform -translate-y-full transition-transform duration-300 group-hover:-translate-y-0">
+                <div class="bg-black/50 backdrop-blur-sm p-2 text-center">
+                  <span class="text-xl font-semibold text-white">G-Mail</span>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <button id="mode" class="modeChanger w-[50px] h-[50px] fixed left-5 bottom-5 bg-[var(--text-color2)] rounded-full flex justify-center items-center z-40" onclick="modechanger()">
-    <img alt=""src="/Images/dark.png" alt="" class="w-[30px] h-[30px] m-2" id="modeChangerimg">
-  </button>
+    <button id="mode"
+      class="modeChanger w-[50px] h-[50px] fixed left-5 bottom-5 bg-[var(--text-color2)] rounded-full flex justify-center items-center z-40"
+      onclick="modechanger()">
+      <img alt="" src="/Images/dark.png" alt="" class="w-[30px] h-[30px] m-2" id="modeChangerimg">
+    </button>
 
-<footer class="bg-[var(--text-color2)] py-1 px-8 text-[color:var(--text-color)] flex justify-between items-center overflow-hidden pattern">
-    <div class="hide">
+    <footer
+      class="bg-[var(--text-color2)] py-1 px-8 text-[color:var(--text-color)] flex justify-between items-center overflow-hidden pattern">
+      <div class="hide">
         <div class="elfsight-app-d3c0a654-8d55-4388-ac94-8a1b0115b1cd" data-elfsight-app-lazy
-            style="opacity: 0.5; left: 10px;"></div>
-    </div>
-    <div class="text-xl text-center">Made with ❤️ by Kush Kansal</div>
-    <div class="text-xl hide">© 2024 All rights reserved.</div>
-</footer>
+          style="opacity: 0.5; left: 10px;"></div>
+      </div>
+      <div class="text-xl text-center">Made with ❤️ by Kush Kansal</div>
+      <div class="text-xl hide">© 2024 All rights reserved.</div>
+    </footer>
 
 </body>
 <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
@@ -469,4 +561,5 @@
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
 <script src="./script.js"></script>
 <script src="./terminal.js"></script>
+
 </html>
