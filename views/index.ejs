@@ -20,75 +20,111 @@
 
 <body class="select-text overflow-x-hidden">
   <div class="snap-mandatory">
-    <div
-      class="select-none navbar text-2xl flex bg-[var(--text-color2)] w-full py-1 md:px-32 px-10 justify-between font-bold overflow-hidden absolute z-50 text-[#297fff;]">
-      <div class="logo flex items-center justify-center" id="hearderArea">
-        <img alt="" src="Images/Profile.jpg" width="50px" style="border-radius: 50%;" id="MyImage">
-        <a href="">
-          <div class="flex ml-4 text-nowrap">
-            <div class="text-red-500">={</div>
-            <div class="text-[color:var(--text-color)]">KshKnsl</div>
-            <div class="text-red-500">}=</div>
+    <nav class="fixed w-full z-50 backdrop-blur-md bg-white/30">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between h-20">
+              <div class="flex items-center">
+                  <a href="#" class="flex-shrink-0 flex items-center group">
+                      <img class="h-12 w-12 rounded-full border-2 border-gray-200 transition-transform group-hover:scale-110" src="Images/Profile.jpg" alt="Profile">
+                      <div class="ml-3 font-bold text-2xl text-gray-800 group-hover:text-blue-600 transition-colors duration-300">
+                          <span class="text-red-500">={</span>
+                          <span>KshKnsl</span>
+                          <span class="text-red-500">}=</span>
+                      </div>
+                  </a>
+              </div>
+              <div class="hidden md:flex items-center space-x-6">
+                  <a href="#Home" class="text-gray-800 hover:text-blue-600 px-3 py-2 rounded-md text-xl font-medium transition duration-300 ease-in-out transform hover:scale-110">Home</a>
+                  <a href="#page2" class="text-gray-800 hover:text-blue-600 px-3 py-2 rounded-md text-xl font-medium transition duration-300 ease-in-out transform hover:scale-110">About</a>
+                  <a href="#page3" class="text-gray-800 hover:text-blue-600 px-3 py-2 rounded-md text-xl font-medium transition duration-300 ease-in-out transform hover:scale-110">Projects</a>
+                  <a href="#Fourth" class="text-gray-800 hover:text-blue-600 px-3 py-2 rounded-md text-xl font-medium transition duration-300 ease-in-out transform hover:scale-110">Contact</a>
+              </div>
+              <div class="hidden md:flex items-center space-x-2">
+                  <div class="relative">
+                      <img src="/SVGs/flash.svg" alt="Flash" class="h-6 w-6 hidden absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" id="flashIcon">
+                      <img src="/Images/charged.png" alt="Battery" class="h-8 w-8 animate-pulse-slow" id="batteryIcon">
+                  </div>
+                  <span class="text-gray-800 font-medium text-xl" id="batteryPercentage">0%</span>
+              </div>
+              <div class="md:hidden flex items-center">
+                  <button type="button" class="hamburgerMenu inline-flex items-center justify-center p-2 rounded-md text-gray-800 hover:text-blue-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-controls="mobile-menu" aria-expanded="false">
+                      <span class="sr-only">Open main menu</span>
+                      <svg class="block h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                      </svg>
+                      <svg class="hidden h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                  </button>
+              </div>
           </div>
-        </a>
       </div>
-      <div class="menu select-none" id="Menu">
-        <ul class="flex items-center justify-center p-4">
-          <li><a class="mr-8 MenuLinks" href="#Home">Home</a></li>
-          <li><a class="mr-8 MenuLinks" href="#page2">About</a></li>
-          <li><a class="mr-8 MenuLinks" href="#page3">Projects</a></li>
-          <li><a class="mr-8 MenuLinks" href="#Fourth">Contact</a></li>
-        </ul>
-      </div>
-      <div class="flex items-center justify-center gap-2" id="batteryArea">
-        <img alt="" src="/SVGs/flash.svg" style="display: none; height: 20px;" class="invertme">
-        <img alt="" src="/Images/charged.png" alt="">
-        <p style="font-weight: 500; font-family: Impact, sans-serif; font-size: 20px;">0%</p>
-      </div>
-      <div class="hamburgerMenu flex items-center justify-center md:hidden">
-        <img class="w-8 h-8" src="SVGs/hamburger.svg" alt="">
-        <!-- <img class="" src="SVGs/exit.svg" alt=""> -->
-      </div>
-    </div>
 
-    <div class="heroArea h-screen relative overflow-hidden snap-center bg-[var(--text-color2)]" id="Home">
+      <!-- Mobile menu, show/hide based on menu state. -->
+      <div class="md:hidden hidden backdrop-blur-md bg-white/30" id="mobile-menu">
+          <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              <a href="#Home" class="text-gray-800 hover:text-blue-600 hover:bg-gray-100 block px-3 py-2 rounded-md text-lg font-medium transition duration-300 ease-in-out">Home</a>
+              <a href="#page2" class="text-gray-800 hover:text-blue-600 hover:bg-gray-100 block px-3 py-2 rounded-md text-lg font-medium transition duration-300 ease-in-out">About</a>
+              <a href="#page3" class="text-gray-800 hover:text-blue-600 hover:bg-gray-100 block px-3 py-2 rounded-md text-lg font-medium transition duration-300 ease-in-out">Projects</a>
+              <a href="#Fourth" class="text-gray-800 hover:text-blue-600 hover:bg-gray-100 block px-3 py-2 rounded-md text-lg font-medium transition duration-300 ease-in-out">Contact</a>
+          </div>
+          <div class="px-5 py-3 border-t border-gray-200">
+              <div class="flex items-center space-x-2">
+                  <div class="relative">
+                      <img src="/SVGs/flash.svg" alt="Flash" class="h-6 w-6 hidden absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" id="mobileFlashIcon">
+                      <img src="/Images/charged.png" alt="Battery" class="h-8 w-8 animate-pulse-slow" id="mobileBatteryIcon">
+                  </div>
+                  <span class="text-gray-800 font-medium text-lg" id="mobileBatteryPercentage">0%</span>
+              </div>
+          </div>
+      </div>
+  </nav>
+    <div class="heroArea min-h-screen relative overflow-hidden snap-center bg-[var(--text-color2)]" id="Home">
       <video id="river"
-        class="absolute top-1/2 left-1/2 w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2"
+        class="background-video absolute top-1/2 left-1/2 w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2"
         autoplay muted loop>
         <source src="none" type="video/mp4">
       </video>
       <div
         class="ExtraCursor flex absolute h-[32px] text-[16px] w-fit z-50 text-white bg-slate-600 items-center opacity-0 justify-center font-bold rounded-2xl px-5 py-2 top-0 left-0">
         JAVA DEVELOPER ♨️ </div>
-
+    
       <div class="flex absolute h-[32px] w-fit z-50 items-center justify-center bottom-6 invertme">
-        <img src="Images/scroll-wheel.gif" alt="" style="height: 100px; object-fit: contain;" class="scroller"
-          id="scrollButton">
+        <img src="Images/scroll-wheel.gif" alt="" class="h-[100px] object-contain scroller" id="scrollButton">
       </div>
-      <div class="relative z-10 flex-row items-center justify-center h-full mt-28 font-bold">
-        <div class="namearea m-10 text-center text-[color:var(--text-color)] text-4xl">Hello👋, I'm</div>
-        <div class="select-none name text-7xl lg:text-9xl">Kush Kansal</div>
-
-        <div class="iconArea m-10" id="boxArea">
-          <a href="https://www.linkedin.com/in/kushkansal/" class="box linkedin"><img alt="" src="/SVGs/linkedin.svg">
-            <div class="iconText">LinkedIn</div>
+      <div class="relative z-10 flex flex-col items-center justify-center min-h-screen py-10 px-4">
+        <div class="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden mb-8 border-4 border-[var(--accent-color)] shadow-lg">
+          <img src="/path/to/your/photo.jpg" alt="Kush Kansal" class="w-full h-full object-cover">
+        </div>
+        <div class="namearea mb-4 text-center text-[color:var(--text-color)] text-2xl md:text-4xl font-bold">Hello👋, I'm</div>
+        <div class="select-none name text-5xl md:text-7xl lg:text-9xl font-bold mb-8">Kush Kansal</div>
+    
+        <div class="iconArea flex flex-wrap justify-center gap-4 mb-8" id="boxArea">
+          <a href="https://www.linkedin.com/in/kushkansal/" class="box linkedin flex items-center justify-center w-12 h-12 md:w-16 md:h-16 rounded-full bg-[var(--primary-color)] hover:bg-[#0A66C2] transition-all duration-300">
+            <img alt="LinkedIn" src="/SVGs/linkedin.svg" class="w-6 h-6 md:w-8 md:h-8">
+            <div class="iconText hidden group-hover:block absolute mt-16 bg-white text-black text-xs px-2 py-1 rounded">LinkedIn</div>
           </a>
-          <a href="https://github.com/KushKansal" class="box github"><img alt="" src="/SVGs/github.svg">
-            <div class="iconText">GitHub</div>
+          <a href="https://www.github.com/kushkansal/" class="box github flex items-center justify-center w-12 h-12 md:w-16 md:h-16 rounded-full bg-[var(--primary-color)] hover:bg-gray-800 transition-all duration-300">
+            <img alt="GitHub" src="/SVGs/github.svg" class="w-6 h-6 md:w-8 md:h-8">
+            <div class="iconText hidden group-hover:block absolute mt-16 bg-white text-black text-xs px-2 py-1 rounded">GitHub</div>
           </a>
-          <a href="https://www.instagram.com/kushkansal0/" class="box insta"><img alt="" src="/SVGs/instagram.svg">
-            <div class="iconText">Instagram</div>
+          <a href="https://www.instagram.com/kushkansal0/" class="box flex items-center justify-center w-12 h-12 md:w-16 md:h-16 rounded-full bg-[var(--primary-color)] hover:bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 transition-all duration-300">
+            <img alt="Instagram" src="/SVGs/instagram.svg" class="w-6 h-6 md:w-8 md:h-8">
+            <div class="iconText hidden group-hover:block absolute mt-16 bg-white text-black text-xs px-2 py-1 rounded">Instagram</div>
           </a>
-          <a href="https://twitter.com/kansalkkush" class="box twitter"><img alt="" src="/SVGs/twitter-x.svg">
-            <div class="iconText">Twitter</div>
+          <a href="https://twitter.com/kansalkkush" class="box twitter flex items-center justify-center w-12 h-12 md:w-16 md:h-16 rounded-full bg-[var(--primary-color)] hover:bg-[#1DA1F2] transition-all duration-300">
+            <img alt="Twitter" src="/SVGs/twitter-x.svg" class="w-6 h-6 md:w-8 md:h-8">
+            <div class="iconText hidden group-hover:block absolute mt-16 bg-white text-black text-xs px-2 py-1 rounded">Twitter</div>
           </a>
-          <a href="mailto:kushkansal0@gmail.com" class="box mail"><img alt="" src="/SVGs/gmail.svg">
-            <div class="iconText">G-Mail</div>
+          <a href="mailto:kushkansal0@gmail.com" class="box mail flex items-center justify-center w-12 h-12 md:w-16 md:h-16 rounded-full bg-[var(--primary-color)] hover:bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500 transition-all duration-300">
+            <img alt="Gmail" src="/SVGs/gmail.svg" class="w-6 h-6 md:w-8 md:h-8">
+            <div class="iconText hidden group-hover:block absolute mt-16 bg-white text-black text-xs px-2 py-1 rounded">G-Mail</div>
           </a>
         </div>
         <div style="padding: 20px 50px; letter-spacing: 4px; text-align: center;"
           class="text-2xl lg:text-wrap text-[color:var(--text-color)] mytext flex" id="mytext">
-          CSE @JIIT' 27 || Java || JavaScript || Web Developer || 500+ LeetCode || Explorer</div>
+          CSE @JIIT' 27 || Java || JavaScript || Web Developer || 500+ LeetCode || Explorer
+        </div>
       </div>
     </div>
 
