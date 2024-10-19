@@ -46,14 +46,16 @@ Notification.requestPermission().then(permission => {
 
 // Hamburger menu
 const menuBtn = document.querySelector(".hamburgerMenu");
-if (menuBtn) {
-    menuBtn.addEventListener("click", function() {
-        const svg = menuBtn.querySelector("img");
-        if (svg) {
-            svg.src = svg.src.includes("hamburger") ? "SVGs/exit.svg" : "SVGs/hamburger.svg";
-        }
-    });
-}
+const mobileMenu = document.getElementById("mobile-menu");
+const menuIcon = menuBtn.querySelector("svg:first-child");
+const closeIcon = menuBtn.querySelector("svg:last-child");
+menuBtn.addEventListener("click", function() {
+    const expanded = menuBtn.getAttribute("aria-expanded") === "true" || false;
+    menuBtn.setAttribute("aria-expanded", !expanded);
+    mobileMenu.classList.toggle("hidden");
+    menuIcon.classList.toggle("hidden");
+    closeIcon.classList.toggle("hidden");
+  });
 
 // Tech stack hover effect
 const images = document.querySelectorAll('.TechStacks div');
