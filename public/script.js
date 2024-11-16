@@ -93,7 +93,7 @@ function modechanger() {
         root.style.setProperty('--text-color', '#000000');
         root.style.setProperty('--text-color2', '#ffffff');
         root.style.setProperty('--text-color3', '#ffffff');
-        patterns.forEach(pattern => pattern.style.backgroundImage = 'none');
+        patterns.forEach(pattern => pattern.style.backgroundColor ='#ffffff');
         invertElements.forEach(el => el.style.filter = 'none');
         if (river) river.src = "none";
     } else {
@@ -103,7 +103,7 @@ function modechanger() {
         root.style.setProperty('--text-color', '#ffffff');
         root.style.setProperty('--text-color2', '#000000');
         root.style.setProperty('--text-color3', 'rgb(0 0 0)');
-        patterns.forEach(pattern => pattern.style.backgroundImage = "url('/pattern.png')");
+        patterns.forEach(pattern => pattern.style.backgroundColor ='#1e1d23');
         invertElements.forEach(el => el.style.filter = 'invert(1)');
         if (river) river.src = "Videos/river.mp4";
     }
