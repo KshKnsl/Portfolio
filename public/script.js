@@ -26,19 +26,6 @@ else
 const textToSpeak = `${greeting} Welcome to my digital domain, where innovation meets execution and code meets creativity.`;
 window.speechSynthesis.speak(new SpeechSynthesisUtterance(textToSpeak));    
 
-// Battery level display
-navigator.getBattery().then(battery => {
-    const batteryText = document.querySelector("#batteryArea p");
-    const batteryIcon = document.querySelector("#batteryArea img");
-    
-    if (batteryText && batteryIcon) {
-        setInterval(() => {        
-            batteryText.textContent = Math.floor(battery.level * 100) + "%";
-            batteryIcon.style.display = battery.charging ? "block" : "none";
-        }, 1000);
-    }
-});
-
 // Notification
 Notification.requestPermission().then(permission => {
     new Notification(`${greeting} Welcome to my digital domain, where innovation meets execution and code meets creativity.`);
