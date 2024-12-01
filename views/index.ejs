@@ -75,17 +75,6 @@
           <a href="#Fourth"
             class="text-gray-800 hover:text-blue-600 hover:bg-gray-100 block px-3 py-2 rounded-md text-lg font-medium transition duration-300 ease-in-out">Contact</a>
         </div>
-        <div class="px-5 py-3 border-t border-gray-200">
-          <div class="flex items-center space-x-2">
-            <div class="relative">
-              <img src="/SVGs/flash.svg" alt="Flash"
-                class="h-6 w-6 hidden absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-                id="mobileFlashIcon">
-              <img src="/Images/charged.png" alt="Battery" class="h-8 w-8 animate-pulse-slow" id="mobileBatteryIcon">
-            </div>
-            <span class="text-gray-800 font-medium text-lg" id="mobileBatteryPercentage">0%</span>
-          </div>
-        </div>
       </div>
     </nav>
     <div class="heroArea min-h-screen relative overflow-hidden snap-center bg-[var(--text-color2)] pattern" id="Home">
@@ -103,8 +92,13 @@
       </div> -->
       <div class="relative z-10 flex flex-col items-center justify-center min-h-screen py-10 px-4 mt-16">
         <div
-          class="w-32 h-32 md:w-48 md:h-48 rounded-full overflow-hidden mb-8 border-4 border-[var(--accent-color)] shadow-lg name">
-          <img src="/Images/MyImage.jpg" alt="Kush Kansal" class="w-full h-full object-cover">
+          class="w-32 h-32 md:w-48 md:h-48 rounded-full overflow-hidden mb-8 border-4 border-[var(--accent-color)] shadow-lg ">
+          <div className="relative w-32 h-32 md:w-48 md:h-48 mb-8 group shadow-2xl">
+            <div
+              className="relative w-full h-full rounded-full overflow-hidden border-4 border-[var(--accent-color)] shadow-lg">
+              <img src="/Images/MyImage.jpg" alt="Kush Kansal" className="w-full h-full object-cover" />
+            </div>
+          </div>
         </div>
         <div class="namearea mb-3 text-center text-[color:var(--text-color)] text-2xl md:text-4xl font-bold">Hello👋,
           I'm</div>
