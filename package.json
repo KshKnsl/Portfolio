@@ -4,7 +4,8 @@
   "description": "Welcome to my portfolio website! This is where you can learn more about me, my skills, and the projects I have worked on. Feel free to explore and get in touch if you have any questions or opportunities for collaboration.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +18,7 @@
     "express": "^4.19.2",
     "mongodb": "^6.8.0",
     "mongoose": "^8.4.3",
+    "nodemailer": "^6.9.16",
     "vercel": "^35.2.3"
   }
 }
