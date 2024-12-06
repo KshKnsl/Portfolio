@@ -3,13 +3,13 @@ const express = require("express");
 const app = express();
 const dotenv = require("dotenv");
 const path = require("path");
-const { connectMongoDb } = require("./connection");
-const contactForm = require("./models/contact");
+// const { connectMongoDb } = require("./connection");
+// const contactForm = require("./models/contact");
 dotenv.config();
-const db = process.env.MONGODB_URI;
-connectMongoDb(db)
-  .then(() => console.log("Connected to MongoDB..."))
-  .catch((err) => console.log(err));
+// const db = process.env.MONGODB_URI;
+// connectMongoDb(db)
+//   .then(() => console.log("Connected to MongoDB..."))
+//   .catch((err) => console.log(err));
 
 const port = process.env.PORT || 3000;
 
@@ -31,64 +31,58 @@ let transporter = nodemailer.createTransport({
 });
 
 app.post("/form", async (req, res) => {
-  await contactForm
-    .create({
-      name: req.body.name,
-      email: req.body.email,
-      description: req.body.message,
-    })
-    .then(async () => {
-      console.log("Data inserted successfully");
     let info = await transporter.sendMail({
       from: process.env.EMAIL,
       to: process.env.EMAIL2,
       subject: "Contact Form from Portfolio Submitted",
       html: `
-      <style>
-        h1 {
-          color: #333;
-          font-family: Arial, sans-serif;
-        }
-        h2 {
-          color: #555;
-          font-family: Arial, sans-serif;
-        }
-        ul {
-          list-style-type: none;
-          padding: 0;
-        }
-        li {
-          margin: 5px 0;
-          font-family: Arial, sans-serif;
-        }
-        li span {
-          font-weight: bold;
-        }
-      </style>
-      <h1>Contact Form</h1>
-      <h2>Details</h2>
-      <ul>
-        <li><span>Name:</span> ${req.body.name}</li>
-        <li><span>Email:</span> ${req.body.email}</li>
-        <li><span>Message:</span> ${req.body.message}</li>
-        <li><span>Contact No:</span> ${req.body.contactNo}</li>
-        <li><span>IP Address:</span> ${req.ip}</li>
-        <li><span>Browser:</span> ${req.headers['user-agent']}</li>
-        <li><span>Referer:</span> ${req.headers['referer'] || 'N/A'}</li>
-        <li><span>Host:</span> ${req.headers['host']}</li>
-      </ul>`,
-    });
-  
-    })
-    .catch((err) => {
-      console.log(err);
+      <h1 style="color: #4CAF50; font-family: Arial, sans-serif;">Contact Form</h1>
+      <h2 style="color: #2196F3; font-family: Arial, sans-serif;">Details</h2>
+      <table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif;">
+        <tr style="background-color: #f2f2f2;">
+          <th style="border: 1px solid #ddd; padding: 12px; text-align: left; background-color: #4CAF50; color: white;">Field</th>
+          <th style="border: 1px solid #ddd; padding: 12px; text-align: left; background-color: #4CAF50; color: white;">Value</th>
+        </tr>
+        <tr>
+          <td style="border: 1px solid #ddd; padding: 12px;">Name</td>
+          <td style="border: 1px solid #ddd; padding: 12px;">${req.body.name}</td>
+        </tr>
+        <tr style="background-color: #f9f9f9;">
+          <td style="border: 1px solid #ddd; padding: 12px;">Email</td>
+          <td style="border: 1px solid #ddd; padding: 12px;">${req.body.email}</td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid #ddd; padding: 12px;">Message</td>
+          <td style="border: 1px solid #ddd; padding: 12px;">${req.body.message}</td>
+        </tr>
+        <tr style="background-color: #f9f9f9;">
+          <td style="border: 1px solid #ddd; padding: 12px;">Contact No</td>
+          <td style="border: 1px solid #ddd; padding: 12px;">${req.body.contactNo}</td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid #ddd; padding: 12px;">IP Address</td>
+          <td style="border: 1px solid #ddd; padding: 12px;">${req.ip}</td>
+        </tr>
+        <tr style="background-color: #f9f9f9;">
+          <td style="border: 1px solid #ddd; padding: 12px;">Browser</td>
+          <td style="border: 1px solid #ddd; padding: 12px;">${req.headers['user-agent']}</td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid #ddd; padding: 12px;">Referer</td>
+          <td style="border: 1px solid #ddd; padding: 12px;">${req.headers['referer'] || 'N/A'}</td>
+        </tr>
+        <tr style="background-color: #f9f9f9;">
+          <td style="border: 1px solid #ddd; padding: 12px;">Host</td>
+          <td style="border: 1px solid #ddd; padding: 12px;">${req.headers['host']}</td>
+        </tr>
+      </table>`,
     });
   res.redirect("/");
 });
-app.get("/show", async (req, res) => {
-  const data = await contactForm.find();
-  res.send(data);
-});
+// app.get("/show", async (req, res) => {
+//   const data = await contactForm.find();
+//   res.send(data);
+// });
 
 app.get("/:wrong", async (req, res) => {
   res.render("404");
