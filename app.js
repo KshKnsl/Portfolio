@@ -32,10 +32,10 @@ let transporter = nodemailer.createTransport({
 });
 
 app.post("/form", async (req, res) => {
-  let loc = geoip.lookup(
+/*  let loc = geoip.lookup(
     (req.headers["x-forwarded-for"] || req.ip).split(",")[0].trim()
   );
-
+*/
   let info = await transporter.sendMail({
     from: process.env.EMAIL,
     to: process.env.EMAIL2,
