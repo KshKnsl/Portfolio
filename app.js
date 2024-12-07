@@ -3,6 +3,8 @@ const express = require("express");
 const app = express();
 const dotenv = require("dotenv");
 const path = require("path");
+const geoip = require("geoip-lite");
+const parser = require('ua-parser-js');
 // const { connectMongoDb } = require("./connection");
 // const contactForm = require("./models/contact");
 dotenv.config();
@@ -31,11 +33,18 @@ let transporter = nodemailer.createTransport({
 });
 
 app.post("/form", async (req, res) => {
-    let info = await transporter.sendMail({
-      from: process.env.EMAIL,
-      to: process.env.EMAIL2,
-      subject: "Contact Form from Portfolio Submitted",
-      html: `
+  let loc = geoip.lookup(
+    (req.headers["x-forwarded-for"] || req.ip).split(",")[0].trim()
+  );
+
+  let ua = parser(req.headers['user-agent']);
+  let browserName = ua.browser.name || "N/A";
+
+  let info = await transporter.sendMail({
+    from: process.env.EMAIL,
+    to: process.env.EMAIL2,
+    subject: "Contact Form from Portfolio Submitted",
+    html: `
       <h1 style="color: #4CAF50; font-family: Arial, sans-serif;">Contact Form</h1>
       <h2 style="color: #2196F3; font-family: Arial, sans-serif;">Details</h2>
       <table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif;">
@@ -50,7 +59,7 @@ app.post("/form", async (req, res) => {
         <tr style="background-color: #f9f9f9;">
           <td style="border: 1px solid #ddd; padding: 12px;">Email</td>
           <td style="border: 1px solid #ddd; padding: 12px;">${req.body.email}</td>
-        </tr>
+        </tr> 
         <tr>
           <td style="border: 1px solid #ddd; padding: 12px;">Message</td>
           <td style="border: 1px solid #ddd; padding: 12px;">${req.body.message}</td>
@@ -61,22 +70,26 @@ app.post("/form", async (req, res) => {
         </tr>
         <tr>
           <td style="border: 1px solid #ddd; padding: 12px;">IP Address</td>
-          <td style="border: 1px solid #ddd; padding: 12px;">${req.ip}</td>
+          <td style="border: 1px solid #ddd; padding: 12px;">${req.headers["x-forwarded-for"] || req.ip}</td>
         </tr>
         <tr style="background-color: #f9f9f9;">
           <td style="border: 1px solid #ddd; padding: 12px;">Browser</td>
-          <td style="border: 1px solid #ddd; padding: 12px;">${req.headers['user-agent']}</td>
+          <td style="border: 1px solid #ddd; padding: 12px;">${browserName}</td>
         </tr>
         <tr>
           <td style="border: 1px solid #ddd; padding: 12px;">Referer</td>
-          <td style="border: 1px solid #ddd; padding: 12px;">${req.headers['referer'] || 'N/A'}</td>
+          <td style="border: 1px solid #ddd; padding: 12px;">${req.headers["referer"] || "N/A"}</td>
         </tr>
         <tr style="background-color: #f9f9f9;">
           <td style="border: 1px solid #ddd; padding: 12px;">Host</td>
-          <td style="border: 1px solid #ddd; padding: 12px;">${req.headers['host']}</td>
+          <td style="border: 1px solid #ddd; padding: 12px;">${req.headers["host"]}</td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid #ddd; padding: 12px;">Location</td>
+          <td style="border: 1px solid #ddd; padding: 12px;">${loc ? loc.city : "N/A"}</td>
         </tr>
       </table>`,
-    });
+  });
   res.redirect("/");
 });
 // app.get("/show", async (req, res) => {
