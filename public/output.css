@@ -10,8 +10,8 @@
 
 
 ::selection {
-  background: var(--accent-color);
-  color: var(--text-color2);
+  background: #F0DB4F;
+  color: black;
 }
 
 * {
