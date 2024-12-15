@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 const dotenv = require("dotenv");
 const path = require("path");
-const geoip = require("geoip-lite");
+//const geoip = require("geoip-lite");
 // const { connectMongoDb } = require("./connection");
 // const contactForm = require("./models/contact");
 dotenv.config();
@@ -32,10 +32,10 @@ let transporter = nodemailer.createTransport({
 });
 
 app.post("/form", async (req, res) => {
-  let loc = geoip.lookup(
+/*  let loc = geoip.lookup(
     (req.headers["x-forwarded-for"] || req.ip).split(",")[0].trim()
   );
-
+*/
   let info = await transporter.sendMail({
     from: process.env.EMAIL,
     to: process.env.EMAIL2,
